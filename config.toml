@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://ianhernandez.github.io/cartgasm-hugo/"
 languageCode = "en-us"
 title = "Cartgasm"
 theme = "ananke"
