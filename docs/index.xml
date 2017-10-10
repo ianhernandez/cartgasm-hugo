@@ -6,20 +6,10 @@
     <description>Recent content on Cartgasm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Oct 2017 15:22:31 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 15:00:50 -0700</lastBuildDate>
     
 	<atom:link href="https://ianhernandez.github.io/cartgasm-hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Alpine</title>
-      <link>https://ianhernandez.github.io/cartgasm-hugo/brands/alpine/</link>
-      <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
-      
-      <guid>https://ianhernandez.github.io/cartgasm-hugo/brands/alpine/</guid>
-      <description>GitHub Markdown Kitchen Sink A large collection of code samples which have been tested against GitHub&amp;rsquo;s markdown parser&amp;hellip; so you don&amp;rsquo;t have to.
-Resources This Repo  README.md (preview, raw) – this file TEST.md (preview, raw) — used to test the examples from this file, which are pre-generated  Markdown  Original Markdown Syntax from John Gruber GitHub-Flavored Markdown from GitHub  Code Examples with Preview Block Elements  CodePreview  Paragraph    This is a paragraph.</description>
-    </item>
     
     <item>
       <title>My First Post</title>

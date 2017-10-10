@@ -1,5 +1,17 @@
-baseURL = "https://ianhernandez.github.io/cartgasm-hugo/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Cartgasm"
-theme = "ananke"
+theme = "ga-hugo-theme"
 publishDir = "docs"
+
+sectionPagesMenu = "main"
+
+# Copyright
+copyright = "(c) 2015 yourname."
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  subtitle = "Hugo is Absurdly Fast!"
