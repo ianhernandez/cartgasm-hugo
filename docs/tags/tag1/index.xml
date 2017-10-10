@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on Cartgasm</title>
+    <link>/tags/tag1/</link>
+    <description>Recent content in Tag1 on Cartgasm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) 2015 yourname.</copyright>
+    <lastBuildDate>Sat, 07 Oct 2017 15:22:31 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alpine</title>
+      <link>/brands/alpine/</link>
+      <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
+      
+      <guid>/brands/alpine/</guid>
+      <description>Test</description>
+    </item>
+    
+  </channel>
+</rss>
