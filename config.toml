@@ -1,4 +1,4 @@
-baseURL = "/cartgasm-hugo/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Cartgasm"
 theme = "ga-hugo-theme"

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Cartgasm</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Cartgasm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) 2015 yourname.</copyright>
+    <lastBuildDate>Mon, 09 Oct 2017 14:41:05 -0700</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hey</title>
+      <link>/post/hey/</link>
+      <pubDate>Mon, 09 Oct 2017 14:41:05 -0700</pubDate>
+      
+      <guid>/post/hey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test5</title>
+      <link>/post/test5/</link>
+      <pubDate>Sun, 08 Oct 2017 22:06:50 -0700</pubDate>
+      
+      <guid>/post/test5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test4</title>
+      <link>/post/test4/</link>
+      <pubDate>Sun, 08 Oct 2017 22:06:46 -0700</pubDate>
+      
+      <guid>/post/test4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test3</title>
+      <link>/post/test3/</link>
+      <pubDate>Sun, 08 Oct 2017 22:06:44 -0700</pubDate>
+      
+      <guid>/post/test3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>/post/test2/</link>
+      <pubDate>Sun, 08 Oct 2017 22:06:40 -0700</pubDate>
+      
+      <guid>/post/test2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/post/hello-world/</link>
+      <pubDate>Sun, 08 Oct 2017 21:49:30 -0700</pubDate>
+      
+      <guid>/post/hello-world/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

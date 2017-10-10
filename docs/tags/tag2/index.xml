@@ -2,22 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag2 on Cartgasm</title>
-    <link>/cartgasm-hugo/tags/tag2/</link>
+    <link>/tags/tag2/</link>
     <description>Recent content in Tag2 on Cartgasm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2015 yourname.</copyright>
-    <lastBuildDate>Sat, 07 Oct 2017 15:22:31 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2017 14:41:05 -0700</lastBuildDate>
     
-	<atom:link href="/cartgasm-hugo/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hey</title>
+      <link>/post/hey/</link>
+      <pubDate>Mon, 09 Oct 2017 14:41:05 -0700</pubDate>
+      
+      <guid>/post/hey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/post/hello-world/</link>
+      <pubDate>Sun, 08 Oct 2017 21:49:30 -0700</pubDate>
+      
+      <guid>/post/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Alpine</title>
-      <link>/cartgasm-hugo/brands/alpine/</link>
+      <link>/brands/alpine/</link>
       <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
       
-      <guid>/cartgasm-hugo/brands/alpine/</guid>
+      <guid>/brands/alpine/</guid>
       <description>Test</description>
     </item>
     
