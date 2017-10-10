@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag2 on Cartgasm</title>
-    <link>/tags/tag2/</link>
+    <link>/cartgasm-hugo/tags/tag2/</link>
     <description>Recent content in Tag2 on Cartgasm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2015 yourname.</copyright>
     <lastBuildDate>Sat, 07 Oct 2017 15:22:31 -0700</lastBuildDate>
     
-	<atom:link href="/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/cartgasm-hugo/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Alpine</title>
-      <link>/brands/alpine/</link>
+      <link>/cartgasm-hugo/brands/alpine/</link>
       <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
       
-      <guid>/brands/alpine/</guid>
+      <guid>/cartgasm-hugo/brands/alpine/</guid>
       <description>Test</description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Cartgasm</title>
-    <link>/categories/</link>
+    <link>/cartgasm-hugo/categories/</link>
     <description>Recent content in Categories on Cartgasm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2015 yourname.</copyright>
     <lastBuildDate>Sat, 07 Oct 2017 15:22:31 -0700</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/cartgasm-hugo/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cat2</title>
-      <link>/categories/cat2/</link>
+      <link>/cartgasm-hugo/categories/cat2/</link>
       <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
       
-      <guid>/categories/cat2/</guid>
+      <guid>/cartgasm-hugo/categories/cat2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cat3</title>
-      <link>/categories/cat3/</link>
+      <link>/cartgasm-hugo/categories/cat3/</link>
       <pubDate>Sat, 07 Oct 2017 15:22:31 -0700</pubDate>
       
-      <guid>/categories/cat3/</guid>
+      <guid>/cartgasm-hugo/categories/cat3/</guid>
       <description></description>
     </item>
     
