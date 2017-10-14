@@ -48,4 +48,4 @@ this will output the static content to the defualt /dist folder
 
 ## Built With
 
-* [hugo](http://hugo.io) - Static Site Generator written in GO
+* [hugo](http://gohugo.io) - Static Site Generator written in GO
