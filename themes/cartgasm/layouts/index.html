@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="hero container-fluid bg-primary p-3 mb-4">
+  <div class="text-light">
+    <h2>Welcome To Cartgasm</h2>
+    <h4><small>Subscribe to stay up to date with the latest cannabis cartridge news.</small></h4>
+    <a href="#" class="btn btn-success">Hello</a>
+  </div>
+</div>
+<div class="container-fluid" style="display:none;">
+  <img src="/img/hero.jpg" class="img-fluid" alt="">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9">
+      {{ range where .Pages "Type" "post" }}
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="http://placehold.it/600x400" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6">
+            <a href="{{.URL}}">
+              <h4>{{.Title}}</h4>
+            </a>
+            <div>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+            <div>{{ if .Params.categories }}<strong>Categories:</strong> {{range first 1 .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="col-md-3">
+      {{ partial "sidebar" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
