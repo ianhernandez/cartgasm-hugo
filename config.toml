@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Cartgasm"
-theme = "ga-hugo-theme"
+theme = "cartgasm"
 publishDir = "docs"
 
 sectionPagesMenu = "main"
