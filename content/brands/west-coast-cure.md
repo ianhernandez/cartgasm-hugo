@@ -2,6 +2,8 @@
 title: "West Coast Cure"
 date: 2017-10-09T14:24:17-07:00
 draft: true
+weight: 130
+thumbnail: "/images/brands/west-coast-cure_logo.png"
 ---
 
 Our Mission:

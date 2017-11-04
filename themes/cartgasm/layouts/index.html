@@ -6,23 +6,22 @@
     <a href="#" class="btn btn-success">Hello</a>
   </div>
 </div>
-<div class="container-fluid" style="display:none;">
-  <img src="/img/hero.jpg" class="img-fluid" alt="">
-</div>
-<div class="container-fluid">
+
+<div class="container-fluid feed">
   <div class="row">
     <div class="col-md-9">
       {{ range where .Pages "Type" "post" }}
-        <div class="row mb-5">
+        <div class="row mb-5 feed-item">
           <div class="col-md-6">
-            <img src="http://placehold.it/600x400" class="img-fluid" alt="">
+            <img src="http://placehold.it/1080x720" class="img-fluid" alt="">
           </div>
           <div class="col-md-6">
             <a href="{{.URL}}">
-              <h4>{{.Title}}</h4>
+              <h4 class="feed-title">{{.Title}}</h4>
             </a>
-            <div>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+            <div class="date feed-date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
             <div>{{ if .Params.categories }}<strong>Categories:</strong> {{range first 1 .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
       {{ end }}

@@ -2,6 +2,9 @@
 title: "Absolutextracts"
 date: 2017-10-09T14:29:28-07:00
 draft: true
+
+weight: 110
+thumbnail: "/images/brands/absolute-extracts_logo.png"
 ---
 
 AbsoluteXtracts is committed to offering patients safe, pure and powerful cannabis concentrates. Sourcing their flower from sun-grown farms in California’s Emerald Triangle, AbsoluteXtracts crafts high-THC, CO2 extracted medical marijuana products ranging from vape pens to honey sticks. They dedicate their work to providing consistent, lasting relief to patients in need, all while keeping their cannabis excellent and their prices as affordable as possible.

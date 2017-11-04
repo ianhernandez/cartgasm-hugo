@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/hey/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
+    <loc>/brands/alpine/</loc>
+    <lastmod>2017-10-07T15:22:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/brass-knuckles/</loc>
+    <lastmod>2017-10-09T14:32:01-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/bloom-farms/</loc>
+    <lastmod>2017-10-28T01:46:39-07:00</lastmod>
   </url>
   
   <url>
@@ -13,8 +23,58 @@
   </url>
   
   <url>
-    <loc>/brands/brass-knuckles/</loc>
-    <lastmod>2017-10-09T14:32:01-07:00</lastmod>
+    <loc>/brands/heavy-hitters/</loc>
+    <lastmod>2017-10-07T16:03:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/bloom-brand/</loc>
+    <lastmod>2017-10-28T01:46:46-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/eureka-vapor/</loc>
+    <lastmod>2017-10-28T01:43:26-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/vvs-pens/</loc>
+    <lastmod>2017-10-07T16:05:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/jetty-extracts/</loc>
+    <lastmod>2017-10-28T01:42:38-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/hmbldt/</loc>
+    <lastmod>2017-10-28T01:42:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/orchid-essentials/</loc>
+    <lastmod>2017-10-27T22:48:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/evolab/</loc>
+    <lastmod>2017-10-28T01:43:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/levelblends/</loc>
+    <lastmod>2017-10-28T01:42:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/brands/goldrop/</loc>
+    <lastmod>2017-10-28T01:47:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/710kingpen-newsweek/</loc>
+    <lastmod>2017-10-08T22:06:50-07:00</lastmod>
   </url>
   
   <url>
@@ -43,70 +103,36 @@
   </url>
   
   <url>
-    <loc>/brands/vvs-pens/</loc>
-    <lastmod>2017-10-07T16:05:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/brands/heavy-hitters/</loc>
-    <lastmod>2017-10-07T16:03:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/brands/alpine/</loc>
-    <lastmod>2017-10-07T15:22:31-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/brands/</loc>
     <lastmod>2017-10-07T15:22:31-07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cat1/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cat2/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cat3/</loc>
     <lastmod>2017-10-07T15:22:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
+    <lastmod>2017-10-08T22:06:50-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/tag1/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
+    <lastmod>2017-10-08T21:49:30-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/tag2/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
+    <lastmod>2017-10-08T21:49:30-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -118,7 +144,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-10-09T14:41:05-07:00</lastmod>
+    <lastmod>2017-10-08T21:49:30-07:00</lastmod>
     <priority>0</priority>
   </url>
   

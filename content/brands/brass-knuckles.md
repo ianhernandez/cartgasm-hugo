@@ -2,6 +2,8 @@
 title: "Brass Knuckles"
 date: 2017-10-09T14:32:01-07:00
 draft: false
+weight: 30
+thumbnail: "/images/brands/brass-knuckles-og_vape-cartridge_logo.png"
 ---
 
 Knuckle up!

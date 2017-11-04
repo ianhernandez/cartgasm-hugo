@@ -2,6 +2,9 @@
 title: "Delta 9"
 date: 2017-10-09T14:15:22-07:00
 draft: true
+
+weight: 90
+thumbnail: "/images/brands/delta-9_logo.png"
 ---
 
 Join us in taking the cannabis movement forward. The story of Delta 9 goes back to the start of the medicinal marijuana revolution. For over 15 years, our team has closely worked with government bodies, medical experts and law officials on common sense reform. What drives us isn’t just a strong belief in personal choice, but ensuring that everyone has access to the highest quality cannabis products.

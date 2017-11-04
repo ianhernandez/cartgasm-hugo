@@ -2,6 +2,9 @@
 title: "Flavrx"
 date: 2017-10-09T14:01:37-07:00
 draft: true
+
+weight: 160
+thumbnail: "/images/brands/flavrx_logo.png"
 ---
 
 Our Mission:

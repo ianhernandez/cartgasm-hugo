@@ -1,0 +1,51 @@
+body{
+  background: #fff;
+}
+
+/*  ?pid=1502692034377789010 */
+
+.title, .guides, .brands{ /* Let's add margin-top to these page identifiers */
+    margin-top: 1.5em;
+}
+.author{
+  margin-top: 1em;
+}
+.featured-img{
+  margin-top: 1em;
+}
+
+.date{
+  color: #999;
+  font-weight: lighter;
+}
+
+.description{
+  max-width: 25em;
+}
+
+.feed{
+  max-width: 1460px;
+}
+
+.feed-item{
+
+}
+
+.feed-title{
+  color: #000;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.feed-date{
+  margin-bottom: .6em;
+}
+
+.brand-hero{
+  background: #2A2F33;
+  color: #fff;
+}
+
+.brand-title{
+  border-right: 1px solid rgba(255,255,255,0.1);
+}

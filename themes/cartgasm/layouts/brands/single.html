@@ -1,0 +1,79 @@
+{{ define "main" }}
+  <div class="brand-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 brand-title">
+          <h1 class="title">{{.Title}}</h1>
+        </div>
+        <div class="col-2">
+          afds
+        </div>
+        <div class="col-2">
+          afds
+        </div>
+        <div class="col-2">
+          asdf
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="container">
+       <div class="row">
+         <div class="col-12 col-lg-8">
+           <div class="video">
+             <div class="intrinsic-container intrinsic-container-16x9">
+               <iframe src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+             </div>
+           </div>
+           <div class="author">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
+           <figure class="figure featured-img d-none">
+           <img src="{{ .Params.featured }}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
+           </figure>
+           <div>{{.Content}}</div>
+         </div>
+         <div class="sidebar col-12 col-lg-4 order-first">
+           <img src="{{ .Params.productthumb }}" alt="" class="img-fluid">
+           <a class="btn btn-primary btn-lg btn-block" href="#">Purchase</a>
+           <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>Location</td>
+                <td>Denver, Colorado</td>
+              </tr>
+              <tr>
+                <td>Available</td>
+                <td>CA, WA, OR, NV</td>
+              </tr>
+              <tr>
+                <td>Style</td>
+                <td>510 Universal</td>
+              </tr>
+              <tr>
+                <td>Airflow</td>
+                <td>Threading</td>
+              </tr>
+              <tr>
+                <td>Coil</td>
+                <td>Ceramic</td>
+              </tr>
+              <tr>
+                <td>Diameter</td>
+                <td>X.Xmm</td>
+              </tr>
+              <tr>
+                <td>Offerings</td>
+                <td>
+                  <ul>
+                    <li>1000 mg</li>
+                    <li>500 mg</li>
+                    <li>300mg</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+       </div>
+     </div>
+{{ end }}

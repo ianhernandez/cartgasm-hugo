@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <div class="container guides">
+    <div class="row">
+       {{.Content}}
+       {{ range .Pages.ByWeight }}
+            <div class="col-md-6 col-lg-4">
+              <div class="card text-white bg-dark mb-4">
+                <div class="card-body">
+                  <h2 class="h4 card-title">{{.Title}}</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <a href="{{.URL}}">
+                  <img class="card-img-bottom" src="{{ .Params.thumbnail }}" alt="Card image cap">
+                </a>
+              </div>
+            </div>
+       {{ end }}
+    </div>
+  </div>
+{{ end }}

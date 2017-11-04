@@ -2,6 +2,8 @@
 title: "Kurvana"
 date: 2017-10-09T14:26:36-07:00
 draft: true
+weight: 250
+thumbnail: "/images/brands/kurvana_logo.png"
 ---
 Established in 2014, Kurvana provides uncompromising cannabis products to those who need it most. Success for Kurvana began when a small group of dedicated experts became frustrated by the lack of transparency, accountability, and professionalism in the cannabis industry. Instead, Kurvana sought to revolutionize the industry through creative engineering, scientific discovery, and manufacturing excellence.
 

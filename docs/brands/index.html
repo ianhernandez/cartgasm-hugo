@@ -3,84 +3,111 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Document</title>
+     <title>Cartgasm.com | Your guide to the cartworld.</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     <link rel="stylesheet" href="//style.css"/>
+     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">Cartgasm</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      
-      
+  <a class="navbar-brand mr-auto" href="/">Cartgasm</a>
+
+  <div class="navbar-nav ml-auto">
+    
+    
       <a class="nav-item nav-link active" href="/brands/">Brands</a>
-      
+    
       <a class="nav-item nav-link" href="/post/">Posts</a>
-      
-    </div>
+    
   </div>
 </nav>
 
   
-  <div class="container">
+  <div class="container brands">
     <div class="row">
        
-       
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-3 mb-4">
-                <img class="card-img-top" src="http://placehold.it/300x300" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="h4 card-title">710 Kingpen</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/brands/710-kingpen/" class="btn btn-primary">View</a>
-                </div>
+        
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/alpine/"><img class="card-img-top" src="/images/brands/alpine-vapor_logo.png" alt="Alpine Logo"></a>
               </div>
             </div>
        
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-3 mb-4">
-                <img class="card-img-top" src="http://placehold.it/300x300" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="h4 card-title">Brass Knuckles</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/brands/brass-knuckles/" class="btn btn-primary">View</a>
-                </div>
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/brass-knuckles/"><img class="card-img-top" src="/images/brands/brass-knuckles-og_vape-cartridge_logo.png" alt="Brass Knuckles Logo"></a>
               </div>
             </div>
        
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-3 mb-4">
-                <img class="card-img-top" src="http://placehold.it/300x300" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="h4 card-title">Vvs Pens</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/brands/vvs-pens/" class="btn btn-primary">View</a>
-                </div>
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/bloom-farms/"><img class="card-img-top" src="/images/brands/bloom-farms_logo.png" alt="Bloom Farms Logo"></a>
               </div>
             </div>
        
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-3 mb-4">
-                <img class="card-img-top" src="http://placehold.it/300x300" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="h4 card-title">Heavy Hitters</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/brands/heavy-hitters/" class="btn btn-primary">View</a>
-                </div>
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/710-kingpen/"><img class="card-img-top" src="/images/brands/710-kingpen-logo.png" alt="710 Kingpen Logo"></a>
               </div>
             </div>
        
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-3 mb-4">
-                <img class="card-img-top" src="http://placehold.it/300x300" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="h4 card-title">Alpine</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/brands/alpine/" class="btn btn-primary">View</a>
-                </div>
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/heavy-hitters/"><img class="card-img-top" src="/images/brands/heavy-hitters_logo.png" alt="Heavy Hitters Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/bloom-brand/"><img class="card-img-top" src="/images/brands/bloom-brand_logo.png" alt="Bloom Brand Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/eureka-vapor/"><img class="card-img-top" src="/images/brands/eureka-vapor_logo.png" alt="Eureka Vapor Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/vvs-pens/"><img class="card-img-top" src="/images/brands/vvs-pens_logo.png" alt="Vvs Pens Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/jetty-extracts/"><img class="card-img-top" src="/images/brands/jetty-extracts_logo.png" alt="Jetty Extracts Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/hmbldt/"><img class="card-img-top" src="/images/brands/hmbldt_logo.png" alt="Hmbldt Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/orchid-essentials/"><img class="card-img-top" src="/images/brands/orchid-essentials_logo.png" alt="Orchid Essentials Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/evolab/"><img class="card-img-top" src="/images/brands/evolab_logo.png" alt="Evolab Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/levelblends/"><img class="card-img-top" src="/images/brands/levelblends_logo.png" alt="Levelblends Logo"></a>
+              </div>
+            </div>
+       
+            <div class="col-6 col-lg-3">
+              <div class="card mb-4">
+                <a href="/brands/goldrop/"><img class="card-img-top" src="/images/brands/goldrop_logo.png" alt="Goldrop Logo"></a>
               </div>
             </div>
        
