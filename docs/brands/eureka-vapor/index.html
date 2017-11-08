@@ -4,65 +4,151 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Cartgasm.com | Your guide to the cartworld.</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+     <script src="https://use.fontawesome.com/419981e3c3.js"></script>
+     <script src="//main.js"></script>
+
+     </script>
      <link rel="stylesheet" href="//style.css"/>
-     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand mr-auto" href="/">Cartgasm</a>
+    <a class="navbar-brand" href="/">Cartgasm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="navbar-nav ml-auto">
-    
-    
-      <a class="nav-item nav-link active" href="/brands/">Brands</a>
-    
-      <a class="nav-item nav-link" href="/post/">Posts</a>
-    
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        
+        
+          <li class="nav-item active">
+            <a class="nav-link" href="/brands/">Brands</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/post/">Posts</a>
+          </li>
+        
+      </ul>
+    </div>
 </nav>
+
 
   
   <div class="brand-hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 brand-title">
-          <h1 class="title">Eureka Vapor</h1>
-        </div>
-        <div class="col-md-2">
-          afds
-        </div>
-        <div class="col-md-2">
-          afds
-        </div>
-        <div class="col-md-2">
-          asdf
+    <div class="brand-container">
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col col-sm-6 col-lg-4 brand-title">
+            <img src="/images/brands/eureka-vapor_logo.png" class="brand-avatar rounded-circle" alt="">
+            <h1 class="h3 title">Eureka Vapor</h1>
+          </div>
+          <div class="col d-none d-sm-flex">
+            <div class="placeholder">
+              <h3>Brand Overview</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-     <div class="container">
+     <div class="container-fluid max-width">
        <div class="row">
-         <div class="col-12 col-lg-9">
+         <div class="col-12 col-lg-8">
+           <div class="single-brand_wrapper">
 
-           <div style="color:grey; font-size:16px;">Saturday, Oct 28, 2017</div>
-           <div class="author"></div>
-           <figure class="figure featured-img">
-           <img src="" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-              <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
-           </figure>
-           <div><p>asdf</p>
+             <figure class="figure featured-img d-none">
+             <img src="" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
+             </figure>
+
+             <div class="brand-nav">
+               <nav class="nav nav-pills" id="myTab" role="tablist">
+                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
+                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</a>
+               </nav>
+             </div>
+
+             <div class="tab-content" id="nav-tabContent">
+               <div class="tab-pane p-3 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="h-entry"><p>asdf</p>
 </div>
+               </div>
+               <div class="tab-pane p-3 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                 <div class="video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe src="https://www.youtube-nocookie.com/embed/?rel=0&amp;showinfo=0" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    &nbsp;
+                 </div>
+               </div>
+               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+             </div>
+
+           </div>
          </div>
-         <div class="col-12 col-lg-3">
-           <img src="http://placehold.it/600x600" class="img-fluid" alt="">
-
-<h2>sidebar</h2>
-<p>Welcome To Cartgasm. Join the community and learn all there is to know about thc cartridges.</p>
-
+         <div class="sidebar col-12 col-lg-4 mb-3 order-first">
+           <div class="sidebar-inner">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12">
+                  <ul class="list-group mt-3 mb-4 d-none d-sm-flex">
+                  
+                  </ul>
+                  <a href="#" class="btn btn-primary btn-lg btn-block">Order Online</a>
+                  <a data-toggle="modal" data-target="#purchase-nearby" href="https://weedmaps.com/brands//map" class="btn btn-default btn-lg btn-block">Purchase Nearby</a>
+                </div>
+            </div>
+           </div>
          </div>
        </div>
      </div>
+
+     
+     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-large" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Eureka Vapor on WeedMaps</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <iframe src="https://weedmaps.com/brands//map" width="100%" height="100%"></iframe>
+           </div>
+           <div class="modal-footer">
+             <a href="https://weedmaps.com/brands//map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
 
 </body>
 </html>

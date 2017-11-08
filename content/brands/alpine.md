@@ -8,8 +8,20 @@ thumbnail: "/images/brands/alpine-vapor_logo.png"
 featured: "http://www.alpinevapor.com/wp-content/uploads/2017/01/new-nature.jpg"
 productthumb: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
 youtube: dyPXqG4h6dU
+
+weedmaps_slug: "alpine-vapor"
+
+productslider:
+  1: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
+  2: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
+  3: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
+
+brandinfo:
+  url: "http://alpinevapor.com"
+  email: "info@alpinevapor.com"
+  location: "California"
+  hey: "hello"
 ---
-## The Alpine Mission
 The Alpine Vapor mission is to produce the purest, safest and most discreet cannabis products on the market. We pair cutting-edge distillation technology with beautiful and accessible design to serve the full spectrum of cannabis enthusiasts, from first-time patients to experienced connoisseurs. We want to raise the bar for cannabis-infused goods and provide the world with An Elevated Experience™.
 
 ### Our Method

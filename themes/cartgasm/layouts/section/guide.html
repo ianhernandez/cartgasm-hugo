@@ -1,9 +1,9 @@
 {{ define "main" }}
-  <div class="container guides">
+  <div class="container-fluid guides">
     <div class="row">
        {{.Content}}
        {{ range .Pages.ByWeight }}
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
               <div class="card text-white bg-dark mb-4">
                 <div class="card-body">
                   <h2 class="h4 card-title">{{.Title}}</h4>

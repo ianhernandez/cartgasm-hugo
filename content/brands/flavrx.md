@@ -5,6 +5,12 @@ draft: true
 
 weight: 160
 thumbnail: "/images/brands/flavrx_logo.png"
+
+productslider:
+  1: "/images/products/flavrx_double-black-label_tangie1.jpg"
+  2: "/images/products/flavrx_double-black-label_tangie2.jpg"
+  3: "/images/products/flavrx_double-black-label_tangie3.jpg"
+
 ---
 
 Our Mission:

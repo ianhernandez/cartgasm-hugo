@@ -1,79 +1,117 @@
 {{ define "main" }}
   <div class="brand-hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 brand-title">
-          <h1 class="title">{{.Title}}</h1>
-        </div>
-        <div class="col-2">
-          afds
-        </div>
-        <div class="col-2">
-          afds
-        </div>
-        <div class="col-2">
-          asdf
+    <div class="brand-container">
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col col-sm-6 col-lg-4 brand-title">
+            <img src="{{ .Params.thumbnail }}" class="brand-avatar rounded-circle" alt="">
+            <h1 class="h3 title">{{.Title}}</h1>
+          </div>
+          <div class="col d-none d-sm-flex">
+            <div class="placeholder">
+              <h3>Brand Overview</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-     <div class="container">
+     <div class="container-fluid max-width">
        <div class="row">
          <div class="col-12 col-lg-8">
-           <div class="video">
-             <div class="intrinsic-container intrinsic-container-16x9">
-               <iframe src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+           <div class="single-brand_wrapper">
+
+             <figure class="figure featured-img d-none">
+             <img src="{{ .Params.featured }}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
+             </figure>
+
+             <div class="brand-nav">
+               <nav class="nav nav-pills" id="myTab" role="tablist">
+                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
+                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</a>
+               </nav>
              </div>
+
+             <div class="tab-content" id="nav-tabContent">
+               <div class="tab-pane p-3 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="h-entry">{{.Content}}</div>
+               </div>
+               <div class="tab-pane p-3 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                 <div class="video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}?rel=0&amp;showinfo=0" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    &nbsp;
+                 </div>
+               </div>
+               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+             </div>
+
            </div>
-           <div class="author">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-           <figure class="figure featured-img d-none">
-           <img src="{{ .Params.featured }}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-              <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
-           </figure>
-           <div>{{.Content}}</div>
          </div>
-         <div class="sidebar col-12 col-lg-4 order-first">
-           <img src="{{ .Params.productthumb }}" alt="" class="img-fluid">
-           <a class="btn btn-primary btn-lg btn-block" href="#">Purchase</a>
-           <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td>Location</td>
-                <td>Denver, Colorado</td>
-              </tr>
-              <tr>
-                <td>Available</td>
-                <td>CA, WA, OR, NV</td>
-              </tr>
-              <tr>
-                <td>Style</td>
-                <td>510 Universal</td>
-              </tr>
-              <tr>
-                <td>Airflow</td>
-                <td>Threading</td>
-              </tr>
-              <tr>
-                <td>Coil</td>
-                <td>Ceramic</td>
-              </tr>
-              <tr>
-                <td>Diameter</td>
-                <td>X.Xmm</td>
-              </tr>
-              <tr>
-                <td>Offerings</td>
-                <td>
-                  <ul>
-                    <li>1000 mg</li>
-                    <li>500 mg</li>
-                    <li>300mg</li>
+         <div class="sidebar col-12 col-lg-4 mb-3 order-first">
+           <div class="sidebar-inner">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    {{ range $slide, $slideimg := .Params.productslider }}
+                    <div class="carousel-item {{ if $slide | eq 1 }} active{{ end }}">
+                      <img class="d-block w-100" src="{{ $slideimg }}" alt="Second slide">
+                    </div>
+                    {{ end }}
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12">
+                  <ul class="list-group mt-3 mb-4 d-none d-sm-flex">
+                  {{ range $key, $value := .Params.brandinfo }}
+                  <li class="list-group-item">{{ $key }}: {{ $value }}</li>
+                  {{ end }}
                   </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <a href="#" class="btn btn-primary btn-lg btn-block">Order Online</a>
+                  <a data-toggle="modal" data-target="#purchase-nearby" href="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map" class="btn btn-default btn-lg btn-block">Purchase Nearby</a>
+                </div>
+            </div>
+           </div>
          </div>
        </div>
      </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-large" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">{{.Title}} on WeedMaps</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <iframe src="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map" width="100%" height="100%"></iframe>
+           </div>
+           <div class="modal-footer">
+             <a href="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
 {{ end }}
