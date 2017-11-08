@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cartgasm</title>
-    <link>/post/</link>
+    <link>http://cartgasm.com/post/</link>
     <description>Recent content in Posts on Cartgasm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2015 yourname.</copyright>
     <lastBuildDate>Sun, 08 Oct 2017 22:06:50 -0700</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cartgasm.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>710 KingPen featured in Newsweek</title>
-      <link>/post/710kingpen-newsweek/</link>
+      <link>http://cartgasm.com/post/710kingpen-newsweek/</link>
       <pubDate>Sun, 08 Oct 2017 22:06:50 -0700</pubDate>
       
-      <guid>/post/710kingpen-newsweek/</guid>
+      <guid>http://cartgasm.com/post/710kingpen-newsweek/</guid>
       <description>Newsweek unveils their latest Special Edition publictation entitled &amp;ldquo;Weed&amp;rdquo;. Profiling a the industry as a whole and spotlighting on few award-winning cannabis brands &amp;amp; products.
 Lorem markdownum puppe hoc, te mutatus fretaque. Quos auratum acceptas satisque, aurum illum teneas: que auras lactis manu. Aevi longo portabant mater coniunx relinquite lunae, pectus omnia. Si efficiet lunae coniunx stillabant rore hausta Notum quoque caedis aevum. Uti petitve.
  Onerata destituit et faciem aeternum ferrum traxisse Parum cute arces Etiam populo quoque Ingenio animans denique agitat vidi horror omnem Quae forti atque Vitae paulatim te ego nullaque Neptunia maritum  Inplevere auget, spectatrix iurare novitate solent sumptoque taedas, triplices.</description>
@@ -25,46 +25,46 @@ Lorem markdownum puppe hoc, te mutatus fretaque. Quos auratum acceptas satisque,
     
     <item>
       <title>Test5</title>
-      <link>/post/test5/</link>
+      <link>http://cartgasm.com/post/test5/</link>
       <pubDate>Sun, 08 Oct 2017 22:06:50 -0700</pubDate>
       
-      <guid>/post/test5/</guid>
+      <guid>http://cartgasm.com/post/test5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test4</title>
-      <link>/post/test4/</link>
+      <link>http://cartgasm.com/post/test4/</link>
       <pubDate>Sun, 08 Oct 2017 22:06:46 -0700</pubDate>
       
-      <guid>/post/test4/</guid>
+      <guid>http://cartgasm.com/post/test4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test3</title>
-      <link>/post/test3/</link>
+      <link>http://cartgasm.com/post/test3/</link>
       <pubDate>Sun, 08 Oct 2017 22:06:44 -0700</pubDate>
       
-      <guid>/post/test3/</guid>
+      <guid>http://cartgasm.com/post/test3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test2</title>
-      <link>/post/test2/</link>
+      <link>http://cartgasm.com/post/test2/</link>
       <pubDate>Sun, 08 Oct 2017 22:06:40 -0700</pubDate>
       
-      <guid>/post/test2/</guid>
+      <guid>http://cartgasm.com/post/test2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>/post/hello-world/</link>
+      <link>http://cartgasm.com/post/hello-world/</link>
       <pubDate>Sun, 08 Oct 2017 21:49:30 -0700</pubDate>
       
-      <guid>/post/hello-world/</guid>
+      <guid>http://cartgasm.com/post/hello-world/</guid>
       <description></description>
     </item>
     
