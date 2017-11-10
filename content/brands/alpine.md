@@ -7,7 +7,13 @@ weight: 10
 thumbnail: "/images/brands/alpine-vapor_logo.png"
 featured: "http://www.alpinevapor.com/wp-content/uploads/2017/01/new-nature.jpg"
 productthumb: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
+
 youtube: dyPXqG4h6dU
+yt_playlist:
+  1: "dyPXqG4h6dU"
+  2: "JcFeMr-V6JA"
+  3: "zF6xJYiW6lA"
+  4: "OV6B6LTnPAc"
 
 weedmaps_slug: "alpine-vapor"
 

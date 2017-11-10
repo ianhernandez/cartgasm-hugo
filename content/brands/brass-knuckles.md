@@ -5,10 +5,14 @@ draft: false
 weight: 30
 thumbnail: "/images/brands/brass-knuckles-og_vape-cartridge_logo.png"
 
+weedmaps_slug: "brass-knuckles"
+
 productslider:
   1: "/images/products/brass-knuckles_brass-woods1.jpg"
-  2: "/images/products/brass-knuckles_brass-woods2.jpg"
+  2: "/images/products/brass-knuckles_tahoe-og1.jpg"
   3: "/images/products/brass-knuckles_brass-woods3.jpg"
+  4: "/images/products/brass-knuckles_tahoe-og3.jpg"
+  5: "/images/products/brass-knuckles_brass-woods2.jpg"
 
 ---
 
