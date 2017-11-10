@@ -48,9 +48,9 @@ body{
 
 .brand-hero{
   background: #2A2F33;
-  padding-top: 10em;
+  padding-top: 4rem;
   color: #fff;
-  margin-bottom: 2rem;
+
   @media only screen and (min-width: 600px)  {
 
   }
@@ -79,13 +79,12 @@ body{
 }
 
 .brand-nav{
-  background-color: #eee;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 599px){
   .brand-nav{
-    margin-left: -20px;
-    margin-right: -20px;
+
   }
 }
 
@@ -101,7 +100,6 @@ body{
 
 .sidebar-inner{
   background: #fff;
-  padding: 3em 3em 1em 3em;
 }
 
 .h-entry{
@@ -112,7 +110,7 @@ body{
 }
 
 .single-brand_wrapper{
-  background: white;
+  /*background: white;*/
 }
 
 .max-width{
@@ -171,6 +169,7 @@ body{
   }
 
 }
+
 
 
 iframe{

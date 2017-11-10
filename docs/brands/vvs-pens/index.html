@@ -9,10 +9,11 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
      <script src="https://use.fontawesome.com/419981e3c3.js"></script>
-     <script src="http://cartgasm.com/main.js"></script>
+     
+     <script src="http://cartgasm.commain.js"></script>
 
      </script>
-     <link rel="stylesheet" href="http://cartgasm.com/style.css"/>
+     <link rel="stylesheet" href="http://cartgasm.comstyle.css"/>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,9 +38,8 @@
     </div>
 </nav>
 
-
   
-  <div class="brand-hero">
+  <div class="brand-hero mb-sm-3">
     <div class="brand-container">
       <div class="container-fluid max-width">
         <div class="row">
@@ -49,7 +49,9 @@
           </div>
           <div class="col d-none d-sm-flex">
             <div class="placeholder">
-              <h3>Brand Overview</h3>
+
+              <h3 class="d-none">Brand Overview</h3>
+
             </div>
           </div>
         </div>
@@ -57,43 +59,46 @@
     </div>
   </div>
      <div class="container-fluid max-width">
+
+       <div class="brand-nav mb-4">
+         <nav class="nav nav-pills" id="myTab" role="tablist">
+           <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+           <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
+           <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Instagram</a>
+         </nav>
+       </div>
+
        <div class="row">
          <div class="col-12 col-lg-8">
+
            <div class="single-brand_wrapper">
 
-             <figure class="figure featured-img d-none">
-             <img src="" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
-             </figure>
-
-             <div class="brand-nav">
-               <nav class="nav nav-pills" id="myTab" role="tablist">
-                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
-                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
-                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</a>
-               </nav>
-             </div>
-
              <div class="tab-content" id="nav-tabContent">
-               <div class="tab-pane p-3 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+               <div class="tab-pane p-3 fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="h-entry"><p>Nothing beats being able to smoke almost anywhere and travel with technological elegance. Discreet. Smooth. Potent. Ultra Premium, Styled in different metallics platinum and variation of gold with the strain you want and need. There is an overwhelming demand for #VVSPENS. The Vaporizer game deserved a much needed premium/luxury device. VVS pens will soon be all over the state of California. Later in Colorado, Washington and Oregon.</p>
 </div>
                </div>
-               <div class="tab-pane p-3 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+               <div class="tab-pane fade" id="tab-video" role="tabpanel" aria-labelledby="nav-profile-tab">
                  <div class="video">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe src="https://www.youtube-nocookie.com/embed/?rel=0&amp;showinfo=0" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+                    <div class="embed-responsive embed-responsive-16by9 yt-player">
+                      <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    &nbsp;
+                    <div class="row mt-4 mb-2">
+                      
+                    </div>
                  </div>
                </div>
-               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+               <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="nav-contact-tab">
+                 <div class="instagram">
+                   <div id="instafeed"></div>
+                 </div>
+               </div>
              </div>
-
            </div>
+
          </div>
-         <div class="sidebar col-12 col-lg-4 mb-3 order-first">
-           <div class="sidebar-inner">
+         <div class="sidebar d-none d-sm-flex col-sm-12 col-lg-4 mb-3 order-last">
+           <div class="sidebar-inner p-md-5">
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -127,9 +132,8 @@
          </div>
        </div>
      </div>
-
      
-     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="weedmaps-map" aria-hidden="true">
        <div class="modal-dialog modal-large" role="document">
          <div class="modal-content">
            <div class="modal-header">
@@ -139,7 +143,8 @@
              </button>
            </div>
            <div class="modal-body">
-             <iframe src="https://weedmaps.com/brands//map" width="100%" height="100%"></iframe>
+             <div class="weedmaps-wrapper"></div>
+
            </div>
            <div class="modal-footer">
              <a href="https://weedmaps.com/brands//map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -148,6 +153,56 @@
          </div>
        </div>
      </div>
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+
+     <script type="text/javascript">
+          var feed = new Instafeed({
+              get: 'tagged',
+              tagName: 'awesome',
+              clientId: 'fcdc22e4abb747c3a0417f913ec12437'
+          });
+          feed.run();
+      </script>
+
+     <script>
+     $(function() {
+        $('#purchase-nearby').on('show.bs.modal', function (e) {
+          var iframe = '<iframe id="youtube" width="100%" height="100%" frameborder="0" src="https://weedmaps.com/brands//map"></iframe>';
+          $(".weedmaps-wrapper").html(iframe);
+        })
+        $('[data-youtube]').click(function () {
+          var id = $(this).attr('data-youtube');
+          var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
+          $('#yt').attr('src',src);
+          console.log('yt change');
+        });
+        
+          
+          
+        
+      });
+     </script>
+
+     <script type="text/javascript">
+       var tag = document.createElement('script');
+       tag.id = 'iframe-demo';
+       tag.src = 'https://www.youtube.com/iframe_api';
+       var firstScriptTag = document.getElementsByTagName('script')[0];
+       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+       var player;
+       function onYouTubeIframeAPIReady() {
+         player = new YT.Player('yt', {
+         });
+       }
+
+       $('#video-tab').on('hide.bs.tab', function () {
+         player.pauseVideo()
+       });
+
+     </script>
+
 
 
 </body>
