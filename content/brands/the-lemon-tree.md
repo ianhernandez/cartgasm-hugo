@@ -1,7 +1,7 @@
 ---
 title: "The Lemon Tree"
 date: 2017-10-09T14:28:39-07:00
-draft: true
+draft: false
 weight: 210
 thumbnail: "/images/brands/the-lemon-tree-organics_logo.png"
 ---

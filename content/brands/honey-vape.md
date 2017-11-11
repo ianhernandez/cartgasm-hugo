@@ -1,7 +1,7 @@
 ---
 title: "Honey Vape"
 date: 2017-10-09T14:02:57-07:00
-draft: true
+draft: false
 
 weight: 20
 thumbnail: "/images/brands/honey-vape_logo.png"
