@@ -59,22 +59,26 @@
     </div>
   </div>
      <div class="container-fluid max-width">
-
-       <div class="brand-nav mb-4">
-         <nav class="nav nav-pills" id="myTab" role="tablist">
-           <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
-           <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
-           <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Instagram</a>
-         </nav>
-       </div>
-
        <div class="row">
          <div class="col-12 col-lg-8">
-
            <div class="single-brand_wrapper">
+             <div class="brand-nav mt-1">
+               <nav class="nav nav-tabs" id="myTab" role="tablist">
+                 <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+                 <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
+                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Instagram</a>
+                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Stats</a>
+               </nav>
+             </div>
+
 
              <div class="tab-content" id="nav-tabContent">
-               <div class="tab-pane p-3 fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
+               <div class="tab-pane fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
+                 <table class="table table-bordered mt-4">
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
                 <div class="h-entry">
 
 <p>A trailblazer’s companion.</p>
@@ -106,14 +110,14 @@
                </div>
                <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="nav-contact-tab">
                  <div class="instagram">
-                   <div id="instafeed"></div>
+
                  </div>
                </div>
              </div>
            </div>
 
          </div>
-         <div class="sidebar d-none d-sm-flex col-sm-12 col-lg-4 mb-3 order-last">
+         <div class="sidebar d-sm-flex col-sm-12 col-lg-4 mb-3 order-last">
            <div class="sidebar-inner p-md-5">
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-12">
@@ -170,16 +174,7 @@
        </div>
      </div>
 
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 
-     <script type="text/javascript">
-          var feed = new Instafeed({
-              get: 'tagged',
-              tagName: 'awesome',
-              clientId: 'fcdc22e4abb747c3a0417f913ec12437'
-          });
-          feed.run();
-      </script>
 
      <script>
      $(function() {

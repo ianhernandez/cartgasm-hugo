@@ -22,12 +22,21 @@ productslider:
   2: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
   3: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
 
+product_info:
+  coil: "ceramic"
+  sizes: "300mg, .5g, 1g"
+  available: "California, Colorado, Nevada, Oregon, Washington"
+
+
 brandinfo:
   url: "http://alpinevapor.com"
   email: "info@alpinevapor.com"
   location: "California"
   hey: "hello"
 ---
+
+## Our Mission
+
 The Alpine Vapor mission is to produce the purest, safest and most discreet cannabis products on the market. We pair cutting-edge distillation technology with beautiful and accessible design to serve the full spectrum of cannabis enthusiasts, from first-time patients to experienced connoisseurs. We want to raise the bar for cannabis-infused goods and provide the world with An Elevated Experience™.
 
 ### Our Method
