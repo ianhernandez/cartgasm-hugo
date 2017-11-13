@@ -53,27 +53,35 @@
   </div>
 </div>
 <div class="container-fluid" style="max-width: 600px;">
-  <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Videos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Products</a>
-    </li>
-  </ul>
+  <div class="nav-tabs-wrapper mt-3">
+    <ul class="nav nav-tabs dragscroll horizontal" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Videos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Wholesale</a>
+      </li>
+    </ul>
+  </div>
+  <span class="nav-tabs-wrapper-border mb-3" role="presentation"></span>
+
   <div class="tab-content" id="myTabContent">
 
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
       <ul class="list-group mb-3">
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          Availability
-          <div>
-            
-          </div>
+          Website
+          <span class="badge badge-pill"><a target="_blank" href=""></a></span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Sizes
@@ -82,7 +90,19 @@
 
           </div>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">Purchase <div><span class="badge badge-pill">Nearby</span> <span class="badge badge-pill">Online</span></div></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Availability
+          <div>
+            
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Purchase
+          <div>
+            <span class="badge badge-pill"><i class="fa fa-map-pin" aria-hidden="true"></i> Nearby</span>
+            <span class="badge badge-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Online</span>
+          </div>
+        </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Battery
           <span class="badge badge-pill"></span>
@@ -91,6 +111,7 @@
           Coil
           <span class="badge badge-pill"></span>
         </li>
+
       </ul>
 
       <div id="accordion" role="tablist">
@@ -151,7 +172,9 @@
       </div> 
     </div>
 
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <img class="img-fluid" src="/images/products/honey-vape_grand-daddy-purple_cartridge.jpg" alt="">
+    </div>
 
   </div>
 
