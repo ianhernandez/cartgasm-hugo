@@ -9,6 +9,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
      <script src="https://use.fontawesome.com/419981e3c3.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery.hotkeys@0.1.0/jquery.hotkeys.min.js"></script>
 
      <script src="http://cartgasm.com/main.js"></script>
 
@@ -39,182 +40,158 @@
 </nav>
 
   
-  <div class="brand-hero mb-sm-3">
-    <div class="brand-container">
-      <div class="container-fluid max-width">
-        <div class="row">
-          <div class="col col-sm-6 col-lg-4 brand-title">
-            <img src="/images/brands/plume-vape_logo.png" class="brand-avatar rounded-circle" alt="">
-            <h1 class="h3 title">Plume</h1>
+<div class="container-fluid bg-dark brand-header">
+  <div class="row align-items-center">
+
+    <div class="col-7">
+      <h1 class="h6 text-light mb-0">Plume</h1>
+      <small class="text-light">Los Angeles, Ca</small>
+    </div>
+    <div class="col-5 text-right">
+      <a href="#" class="btn btn-light">$35-60</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="max-width: 600px;">
+  <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Videos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Products</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Availability
+          <div>
+            
           </div>
-          <div class="col d-none d-sm-flex">
-            <div class="placeholder">
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Sizes
+          <div>
+            
 
-              <h3 class="d-none">Brand Overview</h3>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Purchase <div><span class="badge badge-pill">Nearby</span> <span class="badge badge-pill">Online</span></div></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Battery
+          <span class="badge badge-pill"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Coil
+          <span class="badge badge-pill"></span>
+        </li>
+      </ul>
 
+      <div id="accordion" role="tablist">
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Our Mission
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Our Method
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Quality & Safety
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="video">
+         <div class="embed-responsive embed-responsive-16by9 yt-player">
+           <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+         </div>
+         <div class="row">
+           
+         </div> 
+      </div> 
+    </div>
+
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+
   </div>
-     <div class="container-fluid max-width">
-       <div class="row">
-         <div class="col-12 col-lg-8">
-           <div class="single-brand_wrapper">
-             <div class="brand-nav mt-1">
-               <nav class="nav nav-tabs" id="myTab" role="tablist">
-                 <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
-                 <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
-                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Stats</a>
-               </nav>
-             </div>
 
-
-             <div class="tab-content" id="nav-tabContent">
-               <div class="tab-pane fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
-                 <table class="table table-bordered mt-4">
-                    <tbody>
-                      
-                    </tbody>
-                  </table>
-                <div class="h-entry"><p>Mission:</p>
-
-<p>Maximum draw with minimal effort</p>
-
-<p>PLÜME offers high-quality vape pens that present marijuana users a dab-like experience; complete with terpenes from the original flowers infused into their cartridges. They are proud to offer a value driven cannabis product that lives up to their name, creating a plume of smoke after each exhale. PLÜME is excited to supply their state of the art marijuana products, manufactured with the utmost care and attention to detail. PLÜME offers a product that has a widespread appeal. Their goal is to connect with everyone in the cannabis community, seeking a consistent and reliable marijuana product.</p>
-
-<p>History:</p>
-
-<p>PLÜME was founded in 2016 and took a year of research, development, and conception before launching. The marijuana connoisseurs part of PLÜME’s team have been working with cannabis for close to 20 years. They are delighted to lend their level of knowledge and passion for cannabis to PLÜME’s products. Their team appreciates the marijuana community and loves the tight-knit and compassionate nature among cannabis users. PLÜME aims to provide their top-quality marijuana products everywhere cannabis is legalized. They recognize that medical marijuana is needed, and much of their team are patients themselves. Supplying the helpful benefits of concentrated cannabis produced with the highest quality at a competitive rate is what makes PLÜME smoke the competition.</p>
-
-<p>Products:</p>
-
-<p>PLÜME offers a dab-like experience in a marijuana vape pen thanks to their specially formulated oil cartridges and unique batteries. Their team boldly explored all of the ways to improve cannabis vape batteries to provide full-bodied, smoke-filled draw with minimal effort. They have developed a two-click primer that preheats the oil, making it more viscous and creating an optimized inhale. Focusing on infusing with strain-specific terpenes makes PLÜME’s cartridges achieve the rich flavor and aroma of the original cannabis plant. Customers won’t compromise after trying PLÜME, and their vaping experience supplies all the benefits of dabbing in a convenient pen. PLÜME tests all of their cannabis products for purity and potency through SC Labs.</p>
-
-<p>PLÜME sources their cannabis from outdoor, sun-grown marijuana flowers. Cultivated by growers that PLÜME’s team have developed a relationship with during the first waves of the marijuana movement. They are grateful to be partnered with other passionate marijuana connoisseurs that are just as dedicated as PLÜME to bring the best to the cannabis market.</p>
-
-<p>Networks:</p>
-
-<p>PLÜME is a brand that looks toward the future, and are excited for the advancements to come in the marijuana industry. PLÜME can be found at Green Nectar, Spliffy’s, Prime Holistic, Nug Company, Plug’D In and Extraction Delivery menus. PLÜME is proud to offer their marijuana products to the cannabis community of the San Diego and Orange County area. They look forward to supplying PLÜME to patients and recreational users in the Bay Area and throughout California.</p>
 </div>
-               </div>
-               <div class="tab-pane fade" id="tab-video" role="tabpanel" aria-labelledby="nav-profile-tab">
-                 <div class="video">
-                    <div class="embed-responsive embed-responsive-16by9 yt-player">
-                      <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="row mt-4 mb-2">
-                      
-                    </div>
-                 </div>
-               </div>
-               <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="nav-contact-tab">
-                 <div class="instagram">
-
-                 </div>
-               </div>
-             </div>
-           </div>
-
-         </div>
-         <div class="sidebar d-sm-flex col-sm-12 col-lg-4 mb-3 order-last">
-           <div class="sidebar-inner p-md-5">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-lg-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-12">
-                  <ul class="list-group mt-3 mb-4 d-none d-sm-flex">
-                  
-                  </ul>
-                  <a href="#" class="btn btn-primary btn-lg btn-block">Order Online</a>
-                  <a data-toggle="modal" data-target="#purchase-nearby" href="https://weedmaps.com/brands//map" class="btn btn-default btn-lg btn-block">Purchase Nearby</a>
-                </div>
-            </div>
-           </div>
-         </div>
-       </div>
-     </div>
+<script>
+$(function() {
+   
      
-     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="weedmaps-map" aria-hidden="true">
-       <div class="modal-dialog modal-large" role="document">
-         <div class="modal-content">
-           <div class="modal-header">
-             <h5 class="modal-title">Plume on WeedMaps</h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-             </button>
-           </div>
-           <div class="modal-body">
-             <div class="weedmaps-wrapper"></div>
+     
+   
 
-           </div>
-           <div class="modal-footer">
-             <a href="https://weedmaps.com/brands//map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
-             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           </div>
-         </div>
-       </div>
-     </div>
+   
+     
+   
 
+   var tag = document.createElement('script');
+   tag.id = 'iframe-demo';
+   tag.src = 'https://www.youtube.com/iframe_api';
+   var firstScriptTag = document.getElementsByTagName('script')[0];
+   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+   var player;
+   function onYouTubeIframeAPIReady() {
+     player = new YT.Player('yt', {
+     });
+   }
 
-     <script>
-     $(function() {
-        $('#purchase-nearby').on('show.bs.modal', function (e) {
-          var iframe = '<iframe id="youtube" width="100%" height="100%" frameborder="0" src="https://weedmaps.com/brands//map"></iframe>';
-          $(".weedmaps-wrapper").html(iframe);
-        })
-        $('[data-youtube]').click(function () {
-          var id = $(this).attr('data-youtube');
-          var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
-          $('#yt').attr('src',src);
-          console.log('yt change');
-        });
-        
-          
-          
-        
-      });
-     </script>
+   $('[data-youtube]').click(function () {
+     var id = $(this).attr('data-youtube');
+     var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
+     $('#yt').attr('src',src);
+     console.log('yt change');
+   });
 
-     <script type="text/javascript">
-       var tag = document.createElement('script');
-       tag.id = 'iframe-demo';
-       tag.src = 'https://www.youtube.com/iframe_api';
-       var firstScriptTag = document.getElementsByTagName('script')[0];
-       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+   $(document).bind('keydown', 'x', function() {
+     $('body').toggleClass("debug");
+   });
 
-       var player;
-       function onYouTubeIframeAPIReady() {
-         player = new YT.Player('yt', {
-         });
-       }
-
-       $('#video-tab').on('hide.bs.tab', function () {
-         player.pauseVideo()
-       });
-
-     </script>
-
+ });
+</script>
 
 
 </body>

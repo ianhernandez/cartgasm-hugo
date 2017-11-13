@@ -9,6 +9,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
      <script src="https://use.fontawesome.com/419981e3c3.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery.hotkeys@0.1.0/jquery.hotkeys.min.js"></script>
 
      <script src="http://cartgasm.com/main.js"></script>
 
@@ -39,192 +40,158 @@
 </nav>
 
   
-  <div class="brand-hero mb-sm-3">
-    <div class="brand-container">
-      <div class="container-fluid max-width">
-        <div class="row">
-          <div class="col col-sm-6 col-lg-4 brand-title">
-            <img src="/images/brands/brass-knuckles-og_vape-cartridge_logo.png" class="brand-avatar rounded-circle" alt="">
-            <h1 class="h3 title">Brass Knuckles</h1>
+<div class="container-fluid bg-dark brand-header">
+  <div class="row align-items-center">
+
+    <div class="col-7">
+      <h1 class="h6 text-light mb-0">Brass Knuckles</h1>
+      <small class="text-light">Los Angeles, Ca</small>
+    </div>
+    <div class="col-5 text-right">
+      <a href="#" class="btn btn-light">$35-60</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="max-width: 600px;">
+  <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Videos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Products</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Availability
+          <div>
+            
           </div>
-          <div class="col d-none d-sm-flex">
-            <div class="placeholder">
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Sizes
+          <div>
+            
 
-              <h3 class="d-none">Brand Overview</h3>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Purchase <div><span class="badge badge-pill">Nearby</span> <span class="badge badge-pill">Online</span></div></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Battery
+          <span class="badge badge-pill"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Coil
+          <span class="badge badge-pill"></span>
+        </li>
+      </ul>
 
+      <div id="accordion" role="tablist">
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Our Mission
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Our Method
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Quality & Safety
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="video">
+         <div class="embed-responsive embed-responsive-16by9 yt-player">
+           <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+         </div>
+         <div class="row">
+           
+         </div> 
+      </div> 
+    </div>
+
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+
   </div>
-     <div class="container-fluid max-width">
-       <div class="row">
-         <div class="col-12 col-lg-8">
-           <div class="single-brand_wrapper">
-             <div class="brand-nav mt-1">
-               <nav class="nav nav-tabs" id="myTab" role="tablist">
-                 <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
-                 <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
-                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Stats</a>
-               </nav>
-             </div>
 
-
-             <div class="tab-content" id="nav-tabContent">
-               <div class="tab-pane fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
-                 <table class="table table-bordered mt-4">
-                    <tbody>
-                      
-                    </tbody>
-                  </table>
-                <div class="h-entry"><p>Knuckle up!</p>
-
-<p>When it comes to Super Premium CO2 oil products, Brass Knuckles reigns supreme. Renowned for their fire grams and oil cartridges that are known for flavor and potency, Brass Knuckles delivers when it comes to providing consumers top shelf product and ending prohibition. Real purity. Real integrity. No nonsense. No bullshit. Whether it&rsquo;s concentrates, cartridges, or batteries, one thing is absolutely clear: Brass Knuckles ain’t fucking around.</p>
-
-<p>Brass Knuckles speaks to true concentrate connoisseurs by mastering the art of extraction, exclusively using top-shelf cannabis strains. All of their products are lab tested to ensure they’re delivering the high-quality products patients deserve.</p>
-
-<p>Available in Sativa, Indica, and Hybrid, Brass Knuckles works with top strains including Gorilla Glue, Girl Scout Cookies, Jack Herer, and more. Brass Knuckle cartridges offer a full gram of super premium concentrate for the ultimate flavor experience and the most potent THC available. 510 thread and made with superior Quartz, Brass Knuckle cartridges are in a class of their own.</p>
-
-<p>Brass Knuckles - empower the people!</p>
 </div>
-               </div>
-               <div class="tab-pane fade" id="tab-video" role="tabpanel" aria-labelledby="nav-profile-tab">
-                 <div class="video">
-                    <div class="embed-responsive embed-responsive-16by9 yt-player">
-                      <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="row mt-4 mb-2">
-                      
-                    </div>
-                 </div>
-               </div>
-               <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="nav-contact-tab">
-                 <div class="instagram">
-
-                 </div>
-               </div>
-             </div>
-           </div>
-
-         </div>
-         <div class="sidebar d-sm-flex col-sm-12 col-lg-4 mb-3 order-last">
-           <div class="sidebar-inner p-md-5">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-lg-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    
-                    <div class="carousel-item  active">
-                      <img class="d-block w-100" src="/images/products/brass-knuckles_brass-woods1.jpg" alt="Second slide">
-                    </div>
-                    
-                    <div class="carousel-item ">
-                      <img class="d-block w-100" src="/images/products/brass-knuckles_tahoe-og1.jpg" alt="Second slide">
-                    </div>
-                    
-                    <div class="carousel-item ">
-                      <img class="d-block w-100" src="/images/products/brass-knuckles_brass-woods3.jpg" alt="Second slide">
-                    </div>
-                    
-                    <div class="carousel-item ">
-                      <img class="d-block w-100" src="/images/products/brass-knuckles_tahoe-og3.jpg" alt="Second slide">
-                    </div>
-                    
-                    <div class="carousel-item ">
-                      <img class="d-block w-100" src="/images/products/brass-knuckles_brass-woods2.jpg" alt="Second slide">
-                    </div>
-                    
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-lg-12">
-                  <ul class="list-group mt-3 mb-4 d-none d-sm-flex">
-                  
-                  </ul>
-                  <a href="#" class="btn btn-primary btn-lg btn-block">Order Online</a>
-                  <a data-toggle="modal" data-target="#purchase-nearby" href="https://weedmaps.com/brands/brass-knuckles/map" class="btn btn-default btn-lg btn-block">Purchase Nearby</a>
-                </div>
-            </div>
-           </div>
-         </div>
-       </div>
-     </div>
+<script>
+$(function() {
+   
      
-     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="weedmaps-map" aria-hidden="true">
-       <div class="modal-dialog modal-large" role="document">
-         <div class="modal-content">
-           <div class="modal-header">
-             <h5 class="modal-title">Brass Knuckles on WeedMaps</h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-             </button>
-           </div>
-           <div class="modal-body">
-             <div class="weedmaps-wrapper"></div>
+     
+   
 
-           </div>
-           <div class="modal-footer">
-             <a href="https://weedmaps.com/brands/brass-knuckles/map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
-             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           </div>
-         </div>
-       </div>
-     </div>
+   
+     
+   
 
+   var tag = document.createElement('script');
+   tag.id = 'iframe-demo';
+   tag.src = 'https://www.youtube.com/iframe_api';
+   var firstScriptTag = document.getElementsByTagName('script')[0];
+   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+   var player;
+   function onYouTubeIframeAPIReady() {
+     player = new YT.Player('yt', {
+     });
+   }
 
-     <script>
-     $(function() {
-        $('#purchase-nearby').on('show.bs.modal', function (e) {
-          var iframe = '<iframe id="youtube" width="100%" height="100%" frameborder="0" src="https://weedmaps.com/brands/brass-knuckles/map"></iframe>';
-          $(".weedmaps-wrapper").html(iframe);
-        })
-        $('[data-youtube]').click(function () {
-          var id = $(this).attr('data-youtube');
-          var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
-          $('#yt').attr('src',src);
-          console.log('yt change');
-        });
-        
-          
-          
-        
-      });
-     </script>
+   $('[data-youtube]').click(function () {
+     var id = $(this).attr('data-youtube');
+     var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
+     $('#yt').attr('src',src);
+     console.log('yt change');
+   });
 
-     <script type="text/javascript">
-       var tag = document.createElement('script');
-       tag.id = 'iframe-demo';
-       tag.src = 'https://www.youtube.com/iframe_api';
-       var firstScriptTag = document.getElementsByTagName('script')[0];
-       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+   $(document).bind('keydown', 'x', function() {
+     $('body').toggleClass("debug");
+   });
 
-       var player;
-       function onYouTubeIframeAPIReady() {
-         player = new YT.Player('yt', {
-         });
-       }
-
-       $('#video-tab').on('hide.bs.tab', function () {
-         player.pauseVideo()
-       });
-
-     </script>
-
+ });
+</script>
 
 
 </body>
