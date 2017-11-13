@@ -23,10 +23,10 @@ productslider:
   3: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
 
 
-availability: ["CA","NV","OR"]
+availability: ["🌴 CA","🎰 NV","🌲 OR"]
 sizes: ["300mg", "500mg", "1g"]
-coil: "Ceramic"
-battery: "510 Thread"
+coil: "Ceramic/Coil-less"
+battery: "510 Compatible"
 website: "http://alpinevapor.com"
 
 

@@ -40,15 +40,14 @@
 </nav>
 
   
-<div class="container-fluid bg-dark brand-header">
+<div class="container-fluid bg-dark brand-header" style="background: url('https://images.weedmaps.com/brands/000/000/200/desktop_hero/large/alpine-vapor_hero_2.jpg'); background-size: cover;">
   <div class="row align-items-center">
-
     <div class="col-7">
       <h1 class="h6 text-light mb-0">Brass Knuckles</h1>
       <small class="text-light">Los Angeles, Ca</small>
     </div>
     <div class="col-5 text-right">
-      <a href="#" class="btn btn-light">$35-60</a>
+      <a href="#" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="Prices will vary">$35-60</a>
     </div>
   </div>
 </div>
@@ -56,19 +55,19 @@
   <div class="nav-tabs-wrapper mt-3">
     <ul class="nav nav-tabs dragscroll horizontal" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#about" role="tab" aria-controls="home" aria-selected="true">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Videos</a>
+        <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Products</a>
+        <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Order</a>
+        <a class="nav-link" id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false">Order</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Wholesale</a>
+        <a class="nav-link" id="wholesale-tab" data-toggle="tab" href="#wholesale" role="tab" aria-controls="wholesale" aria-selected="false">Wholesale</a>
       </li>
     </ul>
   </div>
@@ -76,12 +75,12 @@
 
   <div class="tab-content" id="myTabContent">
 
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
 
       <ul class="list-group mb-3">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Website
-          <span class="badge badge-pill"><a target="_blank" href=""></a></span>
+          <span class="badge badge-pill"><a target="_blank" href="">🌐 </a></span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Sizes
@@ -99,12 +98,12 @@
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Purchase
           <div>
-            <span class="badge badge-pill"><i class="fa fa-map-pin" aria-hidden="true"></i> Nearby</span>
-            <span class="badge badge-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Online</span>
+            <span class="badge badge-pill">📍 Nearby</span>
+            <span class="badge badge-pill">🛒 Online</span>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          Battery
+          Battery ⚡️
           <span class="badge badge-pill"></span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -113,7 +112,21 @@
         </li>
 
       </ul>
-
+      <div class="offer rounded bg-dark mb-3 p-4 text-light position-relative"
+      style="background: url('https://www.transparenttextures.com/patterns/bright-squares.png'); background-size: cover;">
+        <button type="button" class="close position-absolute" style="top:1px; right: 6px;" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h2 class="h5">Brass Knuckles</h2>
+            <p class="m-0">Giveaway!</p>
+          </div>
+          <div>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+          </div>
+        </div>
+      </div>
       <div id="accordion" role="tablist">
         <div class="card mb-3">
           <div class="card-header" role="tab" id="headingOne">
@@ -161,7 +174,7 @@
       </div>
     </div>
 
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
       <div class="video">
          <div class="embed-responsive embed-responsive-16by9 yt-player">
            <iframe id="yt" src="https://www.youtube-nocookie.com/embed/?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
@@ -172,12 +185,31 @@
       </div> 
     </div>
 
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
       <img class="img-fluid" src="/images/products/brass-knuckles_brass-woods1.jpg" alt="">
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Northern Lights Live Resin
+          <span class="badge badge-primary badge-pill">New</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Super Silver Haze Live Resin
+          <span class="badge badge-info badge-pill">Indica</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Jack Herer Live Resin
+          <span class="badge badge-danger badge-pill">Exclusive</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
+      <a href="#" class="btn btn-primary btn-block mb-3">Order Online</a>
+      <a href="#" class="btn btn-primary btn-block">Purchase Nearby</a>
     </div>
 
   </div>
-
 </div>
 <script>
 $(function() {
@@ -212,8 +244,15 @@ $(function() {
    $(document).bind('keydown', 'x', function() {
      $('body').toggleClass("debug");
    });
+   $('[data-toggle="tooltip"]').tooltip()
 
+
+    $( "button.close" ).click(function() {
+      $( this ).parent().remove();
+      console.log('removed')
+    });
  });
+
 </script>
 
 
