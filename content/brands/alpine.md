@@ -1,5 +1,5 @@
 ---
-title: "Alpine"
+title: "Alpine Vapor"
 date: 2017-10-07T15:22:31-07:00
 draft: false
 
@@ -22,10 +22,12 @@ productslider:
   2: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
   3: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
 
-product_info:
-  coil: "ceramic"
-  sizes: "300mg, .5g, 1g"
-  available: "California, Colorado, Nevada, Oregon, Washington"
+
+availability: ["CA","NV","OR"]
+sizes: ["300mg", "500mg", "1g"]
+coil: "Ceramic"
+battery: "510 Thread"
+
 
 
 brandinfo:

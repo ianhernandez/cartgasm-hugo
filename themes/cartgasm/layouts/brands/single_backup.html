@@ -1,0 +1,132 @@
+{{ define "main" }}
+  <div class="brand-hero mb-sm-3">
+    <div class="brand-container">
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col col-sm-6 col-lg-4 brand-title">
+            <img src="{{ .Params.thumbnail }}" class="brand-avatar rounded-circle" alt="">
+            <h1 class="h3 title">{{.Title}}</h1>
+          </div>
+          <div class="col d-none d-sm-flex">
+            <div class="placeholder">
+
+              <h3 class="d-none">Brand Overview</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="container-fluid max-width">
+       <div class="row">
+         <div class="col-12 col-lg-12">
+            <div class="single-brand_wrapper">
+              <ul class="list-group">
+                {{ range $item, $description := .Params.product_info }}
+                  <li class="list-group-item">{{ humanize $item }}: {{ $description }}</li>
+                {{ end }}
+              </ul>
+             </div>
+
+             <div class="brand-nav mt-1">
+               <nav class="nav nav-tabs" id="myTab" role="tablist">
+                 <a class="nav-item nav-link active" id="about-tab" data-toggle="tab" href="#tab-about" role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+                 <a class="nav-item nav-link" id="video-tab" data-toggle="tab" href="#tab-video" role="tab" aria-controls="nav-profile" aria-selected="false">Videos</a>
+                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#tab-review" role="tab" aria-controls="nav-contact" aria-selected="false">Stats</a>
+               </nav>
+             </div>
+             <div class="tab-content" id="nav-tabContent">
+               <div class="tab-pane fade show active" id="tab-about" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="h-entry">{{.Content}}</div>
+               </div>
+               <div class="tab-pane fade" id="tab-video" role="tabpanel" aria-labelledby="nav-profile-tab">
+                 <div class="video">
+                    <div class="embed-responsive embed-responsive-16by9 yt-player">
+                      <iframe id="yt" src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="row mt-4 mb-2">
+                      {{ range $playlist, $video := .Params.yt_playlist }}
+                      <div class="col-6 mb-4">
+                        <div data-youtube="{{ $video }}">
+                          <img src="https://img.youtube.com/vi/{{ $video }}/0.jpg" class="img-fluid">
+                        </div>
+                      </div>
+                      {{ end }}
+                    </div>
+                 </div>
+               </div>
+               <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="nav-contact-tab">
+                 <div class="instagram">
+
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- Modal -->
+     <div class="modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="weedmaps-map" aria-hidden="true">
+       <div class="modal-dialog modal-large" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">{{.Title}} on WeedMaps</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <div class="weedmaps-wrapper"></div>
+
+           </div>
+           <div class="modal-footer">
+             <a href="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map" target="_blank" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></a>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+
+     <script>
+     $(function() {
+        //$('#purchase-nearby').on('show.bs.modal', function (e) {
+          //var iframe = '<iframe id="youtube" width="100%" height="100%" frameborder="0" src="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map"></iframe>';
+          //$(".weedmaps-wrapper").html(iframe);
+        //})
+
+        //$('#video-tab').on('hidden.bs.tab', function () {
+          //player.pauseVideo()
+        //});
+
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('yt', {
+          });
+        }
+
+        $('[data-youtube]').click(function () {
+          var id = $(this).attr('data-youtube');
+          var src = 'https://www.youtube.com/embed/'+ id +'?rel=0&amp;autoplay=1&amp;showinfo=1&amp;enablejsapi=1';
+          $('#yt').attr('src',src);
+          console.log('yt change');
+        });
+
+        $(document).bind('keydown', 'x', function() {
+          $('body').toggleClass("debug");
+        });
+
+      });
+     </script>
+
+
+{{ end }}

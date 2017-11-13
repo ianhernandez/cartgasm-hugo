@@ -18,7 +18,7 @@
 @media (min-width: 1200px) { /* */ }
 
 
-.title, .guides, .brands{ /* Let's add margin-top to these page identifiers */
+.guides, .brands{ /* Let's add margin-top to these page identifiers */
     margin-top: 1.5em;
 }
 .author{
@@ -54,53 +54,24 @@
   margin-bottom: .6em;
 }
 
-.brand-hero{
-  background: #2A2F33;
-  color: #fff;
-
-  @media only screen and (min-width: 600px)  {
-
-  }
+.brand-header{
+  padding-top: 2em;
+  padding-bottom: .5em
 }
+
 .brand-container{
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .brand-avatar{
-  max-height: 2rem;
-  margin: .5rem .5rem .5rem 0;
+  max-height: 3.5rem;
+  /* margin: .5rem .5rem .5rem 0; */
 }
 
 @media (min-width: 576px) {
   .brand-avatar{
-    margin: 1rem 1rem 1rem 0;
-    max-height: 3.5rem;
-  }
-}
+    /*margin: 1rem 1rem 1rem 0;*/
 
-.brand-title{
-  border-right: 1px solid rgba(255,255,255,0.1);
-}
-
-.brand-title .title{
-  margin: 0; padding: 0;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.brand-hero .col{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.brand-nav{
-  margin: 0 -15px 0 -15px;
-}
-
-@media (min-width: 576px) {
-  .brand-nav{
-    margin: 0;
   }
 }
 
@@ -180,7 +151,43 @@
 
 }
 
+.brand-table{}
 
+.brand-table tr td:first-of-type{
+  //text-transform: capitalize;
+}
+
+.debug > * {
+  border: 1px solid red;
+}
+
+.debug > * > *{
+  border: 1px solid blue;
+}
+
+.debug > * > * > *{
+  border: 1px solid green;
+}
+
+.debug > * > * > * > *{
+  border: 1px solid purple;
+}
+
+.debug > * > * > * > * > *{
+  border: 1px solid orange;
+}
+
+.debug > * > * > * > * > * > *{
+  border: 1px solid pink;
+}
+
+.debug > * > * > * > * > * > * > *{
+  border: 1px solid red;
+}
+
+.debug > * > * > * > * > * > * > * > *{
+  border: 1px solid blue;
+}
 
 iframe{
   border: 0;
