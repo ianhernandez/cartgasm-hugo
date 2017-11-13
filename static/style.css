@@ -75,6 +75,10 @@
   }
 }
 
+.instagram-bio{
+  white-space: pre-wrap;
+}
+
 .sidebar{
 
 }
@@ -194,6 +198,9 @@ iframe{
 }
 
 
+
+
+/* swipeable nav links */
 
 .nav-tabs-wrapper {
   display: block;

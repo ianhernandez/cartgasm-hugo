@@ -26,7 +26,7 @@
         <a class="nav-link" id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false">Order</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="wholesale-tab" data-toggle="tab" href="#wholesale" role="tab" aria-controls="wholesale" aria-selected="false">Wholesale</a>
+        <a class="nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">Social</a>
       </li>
     </ul>
   </div>
@@ -90,6 +90,7 @@
           </div>
         </div>
       </div>
+
       <div id="accordion" role="tablist">
         <div class="card mb-3">
           <div class="card-header" role="tab" id="headingOne">
@@ -176,6 +177,31 @@
     <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
       <a href="#" class="btn btn-primary btn-block mb-3">Order Online</a>
       <a href="#" class="btn btn-primary btn-block">Purchase Nearby</a>
+    </div>
+
+    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
+      {{ $gistJ := getJSON "https://instagram.com/cartgasm/?__a=1" }}
+
+      <div class="card">
+        <img class="d-none card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <div class="media mb-3">
+            <img class="mr-3 img-fluid" style="width: 30%" src="{{ print $gistJ.user.profile_pic_url }}" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="card-title mt-0">@{{ print $gistJ.user.username }}</h5>
+              <p class="card-text">➡️ {{ print $gistJ.user.followed_by.count }} ⬅️ {{ print $gistJ.user.follows.count }}</p>
+            </div>
+          </div>
+          <p class="card-text instagram-bio">{{ print $gistJ.user.biography }}</p>
+          <div class="row">
+            {{ range $gistJ.user.media.nodes }}
+              <div class="col-4 mb-4">
+                <img class="img-fluid" src="{{ .thumbnail_src }}">
+              </div>
+            {{end }}
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
