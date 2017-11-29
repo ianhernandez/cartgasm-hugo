@@ -5,6 +5,53 @@ draft: false
 
 weight: 60
 thumbnail: "/images/brands/heavy-hitters_logo.png"
+featured: "/images/brands/heavy-hitters--banner.jpg"
+
+youtube: ["H1Vbe6jfaKU","uv2qrTaKd3o","h6-KpIrzVww"]
+weedmaps_slug: "heavy-hitters"
+instagram: "heavyhitterstpc"
+facebook:
+snapchat:
+twitter:
+
+location: "Los Angeles, CA"
+price: "40-65"
+
+website: "http://heavyhitters.co/"
+availability: ["CA 🌴","NV 🎰","OR 🌲"]
+sizes: ["1g", "2.2g"]
+coil: "Ceramic"
+battery: "510 Compatible"
+
+products:
+ - name: "Pink Kush"
+   photo: '/images/products/heavy-hitters_1g-cartridge.jpg'
+   tag: '1g'
+   color: "primary"
+ - name: "Skywalker"
+   photo: '/images/products/heavy-hitters_1g-cartridge.jpg'
+   tag: '1g'
+   color: "primary"
+ - name: "Bubba"
+   photo: '/images/products/heavy-hitters_1g-cartridge.jpg'
+   tag: '1g'
+   color: "primary"
+ - name: "Blueberry"
+   photo: '/images/products/heavy-hitters_1g-cartridge.jpg'
+   tag: '1g'
+   color: "primary"
+ - name: "Malibu OG Cold Filtered"
+   photo: '/images/products/heavy-hitters_1g_cold-filtered_cartridge.jpg'
+   tag: '1g'
+   color: "danger"
+ - name: "Diablo OG Cold Filtered"
+   photo: '/images/products/heavy-hitters_1g_cold-filtered_cartridge.jpg'
+   tag: '1g'
+   color: "danger"
+ - name: "Bubba"
+   photo: '/images/products/heavy-hitters_2g_cartridge.jpg'
+   tag: '2.2g'
+   color: "primary"
 ---
 
 

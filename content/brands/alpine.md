@@ -2,40 +2,67 @@
 title: "Alpine Vapor"
 date: 2017-10-07T15:22:31-07:00
 draft: false
-
 weight: 10
+news: "alpine-vapor"
+
 thumbnail: "/images/brands/alpine-vapor_logo.png"
 featured: "http://www.alpinevapor.com/wp-content/uploads/2017/01/new-nature.jpg"
-productthumb: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
+youtube: ["dyPXqG4h6dU","JcFeMr-V6JA","zF6xJYiW6lA","OV6B6LTnPAc"]
 
-youtube: dyPXqG4h6dU
-yt_playlist:
-  1: "dyPXqG4h6dU"
-  2: "JcFeMr-V6JA"
-  3: "zF6xJYiW6lA"
-  4: "OV6B6LTnPAc"
+email: "info@alpinevapor.com"
+weedmaps_slug: alpine-vapor
+instagram: alpine_official
+facebook:
+snapchat:
+twitter:
 
-weedmaps_slug: "alpine-vapor"
+location: "Los Angeles, CA"
+price: "35-65"
 
-productslider:
-  1: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
-  2: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
-  3: "/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg"
-
-
-availability: ["🌴 CA","🎰 NV","🌲 OR"]
-sizes: ["300mg", "500mg", "1g"]
-coil: "Ceramic/Coil-less"
-battery: "510 Compatible"
 website: "http://alpinevapor.com"
+availability: ["CA 🌴","NV 🎰","OR 🌲"]
+sizes: ["300mg", "500mg", "1g"]
+coil: "Cotton"
+battery: "510 Compatible"
+
+products:
+ - name: "Northern Lights"
+   photo: '/images/products/alpine-vapor_cartridge8.jpg'
+   tag: 'Indica'
+   color: "danger"
+ - name: "True OG"
+   photo: '/images/products/alpine-vapor_cartridge8.jpg'
+   tag: 'Indica'
+   color: "danger"
+ - name: "Girl Scout Cookies"
+   photo: '/images/products/alpine-vapor_cartridge8.jpg'
+   tag: 'Indica'
+   color: "danger"
+ - name: "OG Kush"
+   photo: '/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg'
+   tag: 'Hybrid'
+   color: "primary"
+ - name: "Gorilla Glue"
+   photo: '/images/products/alpine-vape_gorilla-glue-live-resin-cartridge.jpg'
+   tag: 'Hybrid'
+   color: "primary"
+ - name: "Super Silver Haze"
+   photo: '/images/products/alpine-vapor_cartridge3.jpg'
+   tag: 'Sativa'
+   color: "primary"
+ - name: "Jack Herer"
+   photo: '/images/products/alpine-vapor_cartridge3.jpg'
+   tag: 'Sativa'
+   color: "primary"
 
 
-
-brandinfo:
-  url: "http://alpinevapor.com"
-  email: "info@alpinevapor.com"
-  location: "California"
-  hey: "hello"
+affiliates:
+ - name: "Kushfly"
+   url: "http://kushfly.com"
+   local: ["California","Nevada","Washington"]
+ - name: "SpeedWeedLA"
+   url: "http://speedweedla.com"
+   local: ["California","Nevada","Washington"]
 ---
 
 ## Our Mission

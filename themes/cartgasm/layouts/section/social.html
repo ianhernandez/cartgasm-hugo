@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="container-fluid" style="max-width: 600px;">
+
+  {{ $gistJ := getJSON "https://instagram.com/cartgasm/?__a=1" }}
+  <div class="row align-items-center">
+    <div class="col-4">
+      <img class="mr-3 img-fluid rounded-circle" src="{{ print $gistJ.user.profile_pic_url }}" alt="Instagram Profile Picture">
+    </div>
+    <div class="col-8">
+      <h4 class="mt-0 h5">@{{ $gistJ.user.username }}</h4>
+      <div class="row mb-3">
+        <div class="col">
+          <p class="h4">{{ $gistJ.user.followed_by.count }}</p>
+          <p>Followers</p>
+        </div>
+        <div class="col">
+          <p class="h4">{{ $gistJ.user.follows.count }}</p>
+          <p>Following</p>
+        </div>
+        <div class="col">
+          <a href="http://instagram.com/{{ print $gistJ.user.username }}" target="_blank"class="btn btn-primary btn-block">View On IG</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="card-text instagram-bio">{{ print $gistJ.user.biography }}</p>
+  <div class="ig-feed" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+    {{ range $gistJ.user.media.nodes }}
+      <div class="ig-image position-relative" style="flex-basis: 33.333%;">
+        <img class="img-fluid" src="{{ .thumbnail_src }}">
+        <div class="caption position-absolute text-white" style="">{{ truncate 240 .caption }}</div>
+        <a target="_blank" href="http://instagram.com/p/{{ .code }}"><span class="position-absolute text-white" style="bottom: 2px; right: 3px; font-size: 11px;">{{ if .is_video }}👁 {{ .video_views }} {{ end }}❤️ {{ .likes.count }} 💬 {{ .comments.count }}</span></a>
+      </div>
+    {{end }}
+  </div>
+
+</div>
+
+{{ end }}

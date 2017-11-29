@@ -1,55 +1,60 @@
 {{ define "main" }}
-<div class="container-fluid bg-dark brand-header" style="background: url('https://images.weedmaps.com/brands/000/000/200/desktop_hero/large/alpine-vapor_hero_2.jpg'); background-size: cover;">
+
+<div class="container-fluid bg-dark brand-header" style="background: url('{{ .Params.featured }}'); background-size: cover;">
   <div class="row align-items-center">
     <div class="col-7">
       <h1 class="h6 text-light mb-0">{{.Title}}</h1>
-      <small class="text-light">Los Angeles, Ca</small>
+      {{ if isset .Params "location" }}
+      <small class="text-light">{{ .Params.location }}</small>
+      {{ end }}
     </div>
+    {{ if isset .Params "price" }}
     <div class="col-5 text-right">
-      <a href="#" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="Prices will vary">$35-60</a>
+      <a href="#" class="btn btn-dark btn-price" data-toggle="tooltip" data-placement="left" title="Prices will vary">${{ .Params.Price}}</a>
     </div>
+    {{ end }}
   </div>
 </div>
+
 <div class="container-fluid" style="max-width: 600px;">
-  <div class="nav-tabs-wrapper mt-3">
-    <ul class="nav nav-tabs dragscroll horizontal" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#about" role="tab" aria-controls="home" aria-selected="true">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false">Order</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">Social</a>
-      </li>
-    </ul>
-  </div>
-  <span class="nav-tabs-wrapper-border mb-3" role="presentation"></span>
-
-  <div class="tab-content" id="myTabContent">
-
-    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-
-      <ul class="list-group mb-3">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Website
-          <span class="badge badge-pill"><a target="_blank" href="{{ .Params.website }}">🌐 {{ .Params.website }}</a></span>
+  <!-- start page tabs -->
+  <!-- page tab navigation -->
+  <nav class="brand-navigation">
+    <div class="nav-tabs-wrapper pt-2">
+      <ul class="nav nav-tabs dragscroll horizontal" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="true">Products</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+        </li>
+        {{ if .Params.youtube }}
+        <li class="nav-item">
+          <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <span class="nav-tabs-wrapper-border pb-3" role="presentation"></span>
+  </nav>
+  <!-- tab slides -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="about-tab">
+      <ul class="list-group mb-3">
+        {{ if .Params.sizes }}
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Sizes
           <div>
             {{ range .Params.sizes }}
               <span class="badge badge-primary badge-pill">{{ . }}</span>
             {{ end }}
-
           </div>
         </li>
+        {{ end }}
+        {{ if .Params.availability }}
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Availability
           <div>
@@ -58,164 +63,209 @@
             {{ end }}
           </div>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Purchase
-          <div>
-            <span class="badge badge-pill">📍 Nearby</span>
-            <span class="badge badge-pill">🛒 Online</span>
-          </div>
-        </li>
+        {{ end }}
+        {{ if .Params.battery }}
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Battery ⚡️
-          <span class="badge badge-pill">{{ .Params.battery }}</span>
+          <span class="badge badge-light">{{ .Params.battery }}</span>
         </li>
+        {{ end }}
+        {{ if .Params.coil }}
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Coil
-          <span class="badge badge-pill">{{ .Params.coil }}</span>
+          <span class="badge badge-light">{{ .Params.coil }}</span>
         </li>
-
+        {{ end }}
       </ul>
-      <div class="offer rounded bg-dark mb-3 p-4 text-light position-relative"
-      style="background: url('https://www.transparenttextures.com/patterns/bright-squares.png'); background-size: cover;">
-        <button type="button" class="close position-absolute" style="top:1px; right: 6px;" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h2 class="h5">{{ .Title }}</h2>
-            <p class="m-0">Giveaway!</p>
+      {{ if .Params.products }}
+      <div id="carouselExampleIndicators" class="border rounded carousel slide mb-3" data-ride="carousel">
+        <div class="carousel-inner">
+          {{ range $slide, $slidecontent := .Params.products }}
+          <div class="carousel-item {{ if $slide | eq 1 }}active{{ end }}">
+            <img class="d-block w-100 rounded " src="{{ .photo }}" alt="{{ .name }}">
           </div>
-          <div>
-            <a href="#" class="btn btn-primary">Sign Up</a>
-          </div>
+          {{ end }}
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
 
-      <div id="accordion" role="tablist">
-        <div class="card mb-3">
-          <div class="card-header" role="tab" id="headingOne">
-            <h5 class="mb-0">
-              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Our Mission
-              </a>
-            </h5>
-          </div>
+      <ul class="list-group product-selector mb-3">
+        {{ range $slide, $slidecontent := .Params.products }}
+        <li data-target="#carouselExampleIndicators" class="list-group-item d-flex justify-content-between align-items-center" data-slide-to="{{ print $slide }}">
+          {{ .name }}
+          {{ if .tag }}<span class="badge badge-{{ .color }} badge-pill">{{ .tag }}</span>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
 
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+      <div class="row mb-3">
+        {{ if .Params.weedmaps_slug }}
+        <div class="col">
+          <button type="button" class="btn {{ if isset .Params "affiliates" }}btn-link{{ else }}btn-primary{{ end }} btn-block btn-lg mb-2 mb-sm-0" data-toggle="modal" data-target="#purchase-nearby">
+            <i class="fa fa-map-pin" aria-hidden="true"></i> Purchase Nearby
+          </button>
         </div>
-        <div class="card mb-3">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Our Method
-              </a>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+        {{ end }}
+        {{ if .Params.affiliates }}
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#purchase-online">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase Online
+          </button>
         </div>
-        <div class="card mb-3">
-          <div class="card-header" role="tab" id="headingThree">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Quality & Safety
-              </a>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
+        {{ end }}
       </div>
+
     </div>
 
+    <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+      <h2>News Coming Soon</h2>
+    </div>
+
+    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+
+      <ul class="list-group mb-3">
+        {{ if .Params.website }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Website
+          <span class="badge badge-pill"><a target="_blank" href="{{ .Params.website }}">{{ .Params.website }}</a></span>
+        </li>
+        {{ end }}
+        {{ if .Params.email }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Email
+          <span class="badge badge-pill">{{ .Params.email }}</span>
+        </li>
+        {{ end }}
+        {{ if .Params.weedmaps_slug }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          WeedMaps
+          <span class="badge badge-pill"><a target="_blank" href="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}">{{ .Title }}</a></span>
+        </li>
+        {{ end }}
+        {{ if .Params.instagram }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Instagram
+          <span class="badge badge-pill"><a target="_blank" href="https://instagram.com/{{ .Params.instagram }}">@{{ .Params.instagram }}</a></span>
+        </li>
+        {{ end }}
+        {{ if .Params.snapchat }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Snapchat
+          <span class="badge badge-pill"><a target="_blank" href="https://snapchat.com/">{{ .Params.snapchat }}</a></span>
+        </li>
+        {{ end }}
+        {{ if .Params.facebook }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Facebook
+          <span class="badge badge-pill"><a target="_blank" href="https://facebook.com/{{ .Params.facebook }}">{{ .Params.facebook }}</a></span>
+        </li>
+        {{ end }}
+        {{ if .Params.twitter }}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Twitter
+          <span class="badge badge-pill"><a target="_blank" href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.twitter }}</a></span>
+        </li>
+        {{ end }}
+
+      </ul>
+
+      {{.Content}}
+
+    </div>
     <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
       <div class="video">
+
+
          <div class="embed-responsive embed-responsive-16by9 yt-player">
-           <iframe id="yt" src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+           {{ if isset .Params "youtube" }}
+              {{ range first 1 .Params.youtube }}
+              <iframe id="yt" src="https://www.youtube-nocookie.com/embed/{{ . }}?rel=0&enablejsapi=1" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+              {{ end }}
+           {{ end }}
          </div>
          <div class="row">
-           {{ range $playlist, $video := .Params.yt_playlist }}
+           {{ range .Params.youtube }}
            <div class="col-6 mt-4">
-             <div data-youtube="{{ $video }}">
-               <img src="https://img.youtube.com/vi/{{ $video }}/0.jpg" class="img-fluid">
+             <div data-youtube="{{ . }}">
+               <img src="https://img.youtube.com/vi/{{ . }}/0.jpg" class="img-fluid">
              </div>
            </div>
            {{ end }}
          </div> <!-- end .row -->
       </div> <!-- end .video -->
     </div>
+  <!-- end page tabs -->
 
-    <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
-      <img class="img-fluid" src="{{ $.Param "productslider.1" }}" alt="">
+</div>
 
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Northern Lights Live Resin
-          <span class="badge badge-primary badge-pill">New</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Super Silver Haze Live Resin
-          <span class="badge badge-info badge-pill">Indica</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Jack Herer Live Resin
-          <span class="badge badge-danger badge-pill">Exclusive</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
-      <a href="#" class="btn btn-primary btn-block mb-3">Order Online</a>
-      <a href="#" class="btn btn-primary btn-block">Purchase Nearby</a>
-    </div>
-
-    <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
-      {{ $gistJ := getJSON "https://instagram.com/cartgasm/?__a=1" }}
-
-      <div class="card">
-        <img class="d-none card-img-top" src="" alt="Card image cap">
-        <div class="card-body">
-          <div class="media mb-3">
-            <img class="mr-3 img-fluid" style="width: 30%" src="{{ print $gistJ.user.profile_pic_url }}" alt="Generic placeholder image">
-            <div class="media-body">
-              <h5 class="card-title mt-0">@{{ print $gistJ.user.username }}</h5>
-              <p class="card-text">➡️ {{ print $gistJ.user.followed_by.count }} ⬅️ {{ print $gistJ.user.follows.count }}</p>
-            </div>
-          </div>
-          <p class="card-text instagram-bio">{{ print $gistJ.user.biography }}</p>
-          <div class="row">
-            {{ range $gistJ.user.media.nodes }}
-              <div class="col-4 mb-4">
-                <img class="img-fluid" src="{{ .thumbnail_src }}">
-              </div>
-            {{end }}
-          </div>
-        </div>
+<!-- Modal -->
+<div class="modal weedmaps-modal fade" id="purchase-nearby" tabindex="-1" role="dialog" aria-labelledby="purchase-nearby" aria-hidden="true">
+  <div class="modal-dialog modal-large" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-none">
+        <h5 class="modal-title" id="purchase-nearby-title">Purchase {{ .Title }} Nearby</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="weedmaps-wrapper"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Open <i class="fa fa-external-link" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal purchase-online-modal fade" id="purchase-online" tabindex="-1" role="dialog" aria-labelledby="purchase-online" aria-hidden="true">
+  <div class="modal-dialog modal-large" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="purchase-online-title">Purchase {{ .Title }} Online</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ if isset .Params "affiliates" }}
+        {{ range $site, $affiliate := .Params.affiliates }}
+        <div class="card mb-3">
+          <div class="card-body">
+            <span class="badge badge-primary mb-2">Provider</span>
+            <h4 class="card-title">{{ .name }}</h4>
+            {{ if .local }}
+            <p class="card-text">States: {{ range .local }}{{ . }}, {{ end }}</p>
+            {{ end }}
+            <a href="{{ .url }}" class="btn btn-secondary">View Products</a>
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 $(function() {
-   //$('#purchase-nearby').on('show.bs.modal', function (e) {
-     //var iframe = '<iframe id="youtube" width="100%" height="100%" frameborder="0" src="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map"></iframe>';
-     //$(".weedmaps-wrapper").html(iframe);
-   //})
-
-   //$('#video-tab').on('hidden.bs.tab', function () {
-     //player.pauseVideo()
-   //});
+   $('#purchase-nearby').on('show.bs.modal', function (e) {
+     var iframe = '<iframe id="youtube" width="100%" allow="geolocation" height="100%" frameborder="0" src="https://weedmaps.com/brands/{{ .Params.weedmaps_slug }}/map"></iframe>';
+     $(".weedmaps-wrapper").html(iframe);
+   })
 
    var tag = document.createElement('script');
    tag.id = 'iframe-demo';
@@ -239,15 +289,33 @@ $(function() {
    $(document).bind('keydown', 'x', function() {
      $('body').toggleClass("debug");
    });
+
    $('[data-toggle="tooltip"]').tooltip()
 
 
-    $( "button.close" ).click(function() {
+    $( ".offer button.close" ).click(function() {
       $( this ).parent().remove();
       console.log('removed')
     });
- });
 
+   $(document).ready(function () {
+     $('.nav li a').click(function(e) {
+
+            $('.nav li.active').removeClass('active');
+
+            var $parent = $(this).parent();
+            $parent.addClass('active');
+            e.preventDefault();
+      });
+    });
+
+    $('.product-selector li').click(function(e) {
+        e.preventDefault();
+        $('li').removeClass('bg-light');
+        $(this).addClass('bg-light');
+    });
+
+
+});
 </script>
-
 {{ end }}

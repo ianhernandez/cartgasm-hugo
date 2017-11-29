@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2015 yourname.</copyright>
-    <lastBuildDate>Sun, 08 Oct 2017 22:06:50 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 06 Nov 2017 08:57:40 -0800</lastBuildDate>
     
 	<atom:link href="http://cartgasm.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>710 KingPen Updates Cartridge Design</title>
+      <link>http://cartgasm.com/post/710-kingpen-updates-cartridge-design/</link>
+      <pubDate>Mon, 06 Nov 2017 08:57:40 -0800</pubDate>
+      
+      <guid>http://cartgasm.com/post/710-kingpen-updates-cartridge-design/</guid>
+      <description>New Bullet Design</description>
+    </item>
     
     <item>
       <title>710 KingPen featured in Newsweek</title>

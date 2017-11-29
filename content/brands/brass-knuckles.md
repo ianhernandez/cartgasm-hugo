@@ -6,6 +6,8 @@ weight: 30
 thumbnail: "/images/brands/brass-knuckles-og_vape-cartridge_logo.png"
 
 weedmaps_slug: "brass-knuckles"
+instagram: therealbrassknucklesog_
+
 
 productslider:
   1: "/images/products/brass-knuckles_brass-woods1.jpg"

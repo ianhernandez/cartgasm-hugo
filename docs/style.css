@@ -56,7 +56,19 @@
 
 .brand-header{
   padding-top: 2em;
-  padding-bottom: .5em
+  padding-bottom: .5em;
+  position: relative;
+}
+
+.brand-header:before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(0deg, rgba(0,20,0,.8), 45%, rgba(255,255,255,0));
+	opacity: .6;
 }
 
 .brand-container{
@@ -73,6 +85,28 @@
     /*margin: 1rem 1rem 1rem 0;*/
 
   }
+}
+.caption{
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  font-size: 11px;
+  padding: 1em;
+  white-space:
+  pre-wrap;
+  display: none;
+  overflow: hidden;
+}
+
+.btn-price{
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.ig-image:hover .caption{
+  /*display: block;*/
 }
 
 .instagram-bio{
@@ -111,8 +145,18 @@
   background-color: rgba(150,150,150,0.4);
 }
 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddd' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddd' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+
+
+
 @media (min-width: 100px){
-  .modal{
+  .weedmaps-modal{
     position: fixed;
     top: 0;
     right: 0;
@@ -120,7 +164,10 @@
     left: 0;
     overflow: hidden;
   }
-  .modal-large{
+  .weedmaps-modal .modal-header{
+
+  }
+  .weedmaps-modal .modal-large{
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -132,19 +179,19 @@
     overflow: hidden;
     margin: 0;
   }
-  .modal-content{
+  .weedmaps-modal .modal-content{
     position: fixed;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
   }
-  .modal-body{
+  .weedmaps-modal .modal-body{
     padding: 0;
     position: relative;
   }
 
-  iframe{
+  .weedmaps-modal iframe{
     border: 0;
     position: absolute;
     top: 0;
@@ -197,10 +244,12 @@ iframe{
   border: 0;
 }
 
-
-
-
 /* swipeable nav links */
+.brand-navigation{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 
 .nav-tabs-wrapper {
   display: block;
@@ -208,7 +257,18 @@ iframe{
   /** 1.5 is font-size, 1 is padding top and bottom, 2 is border width top and bottom */
   position: relative;
   z-index: 1;
+}
 
+.nav-tabs-wrapper:before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 1;
+	background-image: linear-gradient(-90deg, rgba(255,255,255,1), 50%, rgba(255,255,255,0));
+	opacity: 1;
+  width: 80px;
+  pointer-events: none;
 }
 
 .nav-tabs-wrapper .nav-tabs {
@@ -223,13 +283,10 @@ iframe{
   cursor: -webkit-grabbing;
 }
 
-
-
-
 .nav-tabs-wrapper {
   display: block;
   overflow: hidden;
-  height: calc(1.5rem + 1rem + 2px);
+  height: calc(1.5rem + 1.5rem + 2px);
   /** 1.5 is font-size, 1 is padding top and bottom, 2 is border width top and bottom */
   position: relative;
   z-index: 1;
@@ -246,10 +303,10 @@ iframe{
   margin-bottom: 0;
 }
 .nav-tabs-wrapper .nav-item:first-child {
-  /*padding-left: 15px;*/
+  padding-left: 15px;
 }
 .nav-tabs-wrapper .nav-item:last-child {
-  /*padding-right: 15px;*/
+  padding-right: 15px;
 }
 .nav-tabs-wrapper .nav-link {
   white-space: nowrap;
@@ -263,4 +320,13 @@ iframe{
   display: block;
   width: 100%;
   border-top: 1px solid #ddd;
+}
+
+
+.tab-pane h2 {
+  font-size: 1.4em;
+}
+
+.tab-pane h3{
+  font-size: 1.2em;
 }
