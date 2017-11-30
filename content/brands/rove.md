@@ -1,7 +1,7 @@
 ---
 title: "Rove"
 date: 2017-10-09T14:36:45-07:00
-draft: false
+draft: true
 weight: 80
 thumbnail: "/images/brands/rove-brand_logo.png"
 ---

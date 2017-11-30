@@ -7,6 +7,12 @@ uglyURLs = false
 sectionPagesMenu = "main"
 enableEmoji = true
 
+[[menu.main]]
+    name = "News"
+    weight = -110
+    identifier = "post"
+    url = "/"
+
 # Copyright
 copyright = "(c) 2015 yourname."
 

@@ -6,12 +6,12 @@
            <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
            <div class="author">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
            <figure class="figure featured-img">
-           <img src="http://placehold.it/1080x720" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+           <img src="{{ .Params.thumbnail }}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
               <figcaption class="figure-caption text-left">A caption for the above image.</figcaption>
            </figure>
            <div>{{.Content}}</div>
          </div>
-         <div class="col-12 col-lg-3">
+         <div class="d-none d-sm-block col-12 col-lg-3">
            {{ partial "sidebar" . }}
          </div>
        </div>

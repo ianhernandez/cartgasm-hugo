@@ -1,7 +1,9 @@
 ---
-title: "Double Barrel Coming Soon"
-date: 2017-11-06T09:46:39-08:00
-draft: true
+title: "Double Barrel Debuts at Harvest Cup"
+date: 2017-11-11T09:46:39-08:00
+draft: false
+
+thumbnail: "/images/post/double-barrel-debuts-at-harvest-cup2.jpg"
 ---
 
 The new @doublebarrelofficial kit set to drop soon. We've been seeing a lot of hype on this device. Looks like a 2 component (battery & cart) system that will come with a two finger ring attachment. We've yet to see technical specs, but we’ll keep your posted with more details. Carts appear to have a unique proprietary design (looks to be magnetically locking instead of a standard 510 thread). They're dropping a collab with @sherbinski415 as well as @710kingpen. If your attending harvest cup be sure to give these a try & give us your thoughts.

@@ -1,7 +1,7 @@
 ---
 title: "Heavy Hitters"
 date: 2017-10-07T16:03:36-07:00
-draft: false
+draft: true
 
 weight: 60
 thumbnail: "/images/brands/heavy-hitters_logo.png"

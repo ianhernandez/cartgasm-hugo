@@ -1,7 +1,7 @@
 ---
 title: "Kurvana"
 date: 2017-10-09T14:26:36-07:00
-draft: false
+draft: true
 weight: 250
 thumbnail: "/images/brands/kurvana_logo.png"
 ---

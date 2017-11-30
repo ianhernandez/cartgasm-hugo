@@ -1,11 +1,11 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+body{
+  background: #f9f9f9;
+  color: #222;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  body{
-    background: #f5f5f5;
-  }
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -55,7 +55,7 @@
 }
 
 .brand-header{
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: .5em;
   position: relative;
 }

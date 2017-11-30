@@ -11,9 +11,9 @@
   <div class="row">
     <div class="col-md-9">
       {{ range where .Pages "Type" "post" }}
-        <div class="row mb-5 feed-item">
+        <div class="row mb-3 feed-item">
           <div class="col-md-6">
-            <img src="http://placehold.it/1080x720" class="img-fluid" alt="">
+            <img src="{{ if isset .Params "thumbnail" }}{{ .Params.thumbnail }}{{ else }}http://placehold.it/1080x720{{ end }}" class="img-fluid mb-2" alt="">
           </div>
           <div class="col-md-6">
             <a href="{{.URL}}">
